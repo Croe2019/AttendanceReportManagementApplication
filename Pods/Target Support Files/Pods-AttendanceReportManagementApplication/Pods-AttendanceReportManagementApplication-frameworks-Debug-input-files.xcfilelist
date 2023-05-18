@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-AttendanceReportManagementApplication/Pods-AttendanceReportManagementApplication-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ButtonOnKeyboard/ButtonOnKeyboard.framework
+${BUILT_PRODUCTS_DIR}/GRDB.swift/GRDB.framework
+${BUILT_PRODUCTS_DIR}/GrowingTextView/GrowingTextView.framework
+${BUILT_PRODUCTS_DIR}/OHMySQL/OHMySQL.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/OHMySQL/MySQL.framework/MySQL

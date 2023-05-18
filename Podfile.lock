@@ -1,0 +1,30 @@
+PODS:
+  - ButtonOnKeyboard (0.2.0)
+  - GRDB.swift (6.13.0):
+    - GRDB.swift/standard (= 6.13.0)
+  - GRDB.swift/standard (6.13.0)
+  - GrowingTextView (0.7.2)
+  - OHMySQL (3.2.0)
+
+DEPENDENCIES:
+  - ButtonOnKeyboard
+  - GRDB.swift
+  - GrowingTextView (= 0.7.2)
+  - OHMySQL
+
+SPEC REPOS:
+  trunk:
+    - ButtonOnKeyboard
+    - GRDB.swift
+    - GrowingTextView
+    - OHMySQL
+
+SPEC CHECKSUMS:
+  ButtonOnKeyboard: f5f9ba271507f8afdc0f48f4cfa6fa8cc74c6196
+  GRDB.swift: fe420b1af49ec519c7e96e07887ee44f5dfa2b78
+  GrowingTextView: 876bf42005b5e4a4fd740597db12caaf41f0fe6c
+  OHMySQL: 7b131627f6da0bc82b4cf4523cea47b537ed6260
+
+PODFILE CHECKSUM: a86e5344269f904f418c82807fcf9a4b5fbd6dbf
+
+COCOAPODS: 1.11.3

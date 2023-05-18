@@ -1,0 +1,1950 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02386002989C88066C01CF0BD813EB8D /* SQLOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853C931EECB3E3A201218F5B62795665 /* SQLOperators.swift */; };
+		027D420EB173791EBC45D3BA27B5357A /* Migration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F341FA5B67E0E5CC3BE717C8C4DA4B6 /* Migration.swift */; };
+		02C9A7E7DE09CCFDEDF8DCA8FD08F7E7 /* PersistableRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E135A5CDD23B90EB699DE59DCF5AD091 /* PersistableRecord.swift */; };
+		08502D330FBD2EFC5A377D8375450FF2 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A3FA5C595300C41D3EEDDC62BA5346 /* Row.swift */; };
+		0AA48751D0C51ABEBAC1154CFD2BA3E7 /* JoinAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E74F985748B3670721990CA49274247 /* JoinAssociation.swift */; };
+		0AC66B6E3A326F92FAD90A1AED0F626E /* CharsetEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 32860FDE89C41BB52ED4C76F11BD0B93 /* CharsetEncoding.m */; settings = {COMPILER_FLAGS = "-Wno-incomplete-umbrella"; }; };
+		0CF9149136A37E08EFFB3DA900659BB9 /* DatabaseValueConvertible+Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899889AF92E00A5457197FCE3F3E9C37 /* DatabaseValueConvertible+Encodable.swift */; };
+		0D1C6B6DB95A642C58B430D59B6AFAAF /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F742887C1E2E489ABCA0EC25654B6DF1 /* Data.swift */; };
+		0DB3264782C45CA7A4116AD100828382 /* NSString+Escaping.m in Sources */ = {isa = PBXBuildFile; fileRef = F03A71A5FF385A15D11E456313632CE4 /* NSString+Escaping.m */; settings = {COMPILER_FLAGS = "-Wno-incomplete-umbrella"; }; };
+		0EBE1D0A31E3042E959F0A89AF24E3E8 /* RowDecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49238935787F5A0C0780105255AA5637 /* RowDecodingError.swift */; };
+		0ED9DAB56451281A7665A26859EA1F4C /* OHMySQLSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D2E84EBD718886922E61B4808451229 /* OHMySQLSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F33832C7C18C2C040D28CE13214CA86 /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ACCAB9653E42A632973FEF90CD5DB6 /* FTS5.swift */; };
+		0FCBF2C199FE912C6CE0DC22EEA00C4F /* SQLExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7803A260FE252DB3F37A9C607716212D /* SQLExpression.swift */; };
+		105C3B3EE07C0526C87F25726E374047 /* DatabaseBackupProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9C309EDA2A3D471325B7CACEE6D08C /* DatabaseBackupProgress.swift */; };
+		1153CE21C51A71DD16673034ED6EB49F /* SharedValueObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B50F923218FF1CB58C56AA9DD9E56 /* SharedValueObservation.swift */; };
+		11E3EBBAE53377CD040784B5CFA98F9E /* grdb_config.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98B355A131C1AF6AAA1987E656FFCA /* grdb_config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12C9388AA343D031607DC62B6C08D4D3 /* DatabaseSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE793517D575CD5EF0DCD12A66FC5B0 /* DatabaseSnapshot.swift */; };
+		1311BC9398DB98D932A65F1F7D63FA23 /* UUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A005719C69C17F5B7AFACEA98776201 /* UUID.swift */; };
+		14D993E24729A1C7D7C93F508896293C /* NSData+OHSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A6406A2CE8E1643FF0F77F059FD3E52 /* NSData+OHSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		190AADCA5D1A37EAEEA605AF89EAF19D /* OHMySQLMappingProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 764C1A826800FB51133ADCBFEFAD3351 /* OHMySQLMappingProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19DE24C6574BFDB0B4A2301E2EB76C9B /* FetchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182575072952B9A0B6F33889CBD8169C /* FetchRequest.swift */; };
+		1AE8186CBFA415DDDE753DE4C1D4276B /* AssociationAggregate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C5C907152CE0872F06558F1CF7ED2F /* AssociationAggregate.swift */; };
+		1BF14606E5D3E93B10DF8ADEC06E5C19 /* OnDemandFuture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7878F35E5B03B9AB3989F4E111640B67 /* OnDemandFuture.swift */; };
+		1CA63067E7EBFCFAA9157BA444E9E4F5 /* OHLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DBA7AF1ECB8B1086F5190BE121BBD55 /* OHLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CFF619A40B2ECB58172D91A52A79294 /* RequestProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29E87A49590F60D4DC34479369D20DB /* RequestProtocols.swift */; };
+		1D8850C41E64211038C8076B1862BFBC /* MutablePersistableRecord+Insert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663794C13B03219994130327DB275CD /* MutablePersistableRecord+Insert.swift */; };
+		1E7B672A807F4BE9FE17C25693357561 /* OHSSLConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 358C4D04CB1FB9AD8BDE847B2435DEA2 /* OHSSLConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		201FECAAF05A7F75ECF82EC1B7D51BF0 /* DatabaseValueConvertible+RawRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300B3B5B3E4920FCC8D8DFD4F080C176 /* DatabaseValueConvertible+RawRepresentable.swift */; };
+		2196D4E584E4A40AD8928980C4DBDDB5 /* TableRecord+QueryInterfaceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E97D0023A0AF5BB7AE934B8A7C9CB6E /* TableRecord+QueryInterfaceRequest.swift */; };
+		2553C238C543B96FD2BAEE160CDE36FF /* ValueObservationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23B32E71C4FD6709B76D5D81806FCDC /* ValueObservationScheduler.swift */; };
+		25BE3555DAB6FD00DE90AFF9FE16FDC2 /* DatabaseMigrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7486852148CBE7FCDA0A296883C19D /* DatabaseMigrator.swift */; };
+		25DE7654F0591CB7D41E890254702EFB /* OHMySQL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 140FF461170E3E511C87A789EDC3CED9 /* OHMySQL-dummy.m */; };
+		26323FFB4BBF6C227DD581169B21E445 /* HasManyThroughAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E12223547139071B9C339C220392CB5 /* HasManyThroughAssociation.swift */; };
+		278F4D4720A8E96A4CAE3D757D75948D /* OHJoinConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3990F8FE166AEE51FDCD134A09A264DE /* OHJoinConstants.m */; settings = {COMPILER_FLAGS = "-Wno-incomplete-umbrella"; }; };
+		2822D61CA3D623D7CE4DD5EC15CD7450 /* CaseInsensitiveIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA976CA96FE4773CC3923E78318410A /* CaseInsensitiveIdentifier.swift */; };
+		28E4FAAE5E5F4D3E906F9A25A4F7374E /* StatementAuthorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202B73780B12D492D23D84459D68E942 /* StatementAuthorizer.swift */; };
+		296F63DFF8AD34EDBC6376041D117B3E /* DatabaseValueConvertible+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4BE4329A0B059EC4E4238661A1EFC7 /* DatabaseValueConvertible+Decodable.swift */; };
+		2D0F8E1259F8FFBF0AB2CAC8049CE438 /* TableRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB52DD151C276F690ACDDA6EC67837E9 /* TableRecord.swift */; };
+		2DC9B7431025480FD97BE4892BA947EE /* Export.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00FAE366CBA98ED32A9075E85BD24CA /* Export.swift */; };
+		2E9988E741D78EF5B0A0C576CBD27859 /* Pods-AttendanceReportManagementApplication-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49974F7468CF20FB214AE038D8DBD7DE /* Pods-AttendanceReportManagementApplication-dummy.m */; };
+		2F684CD9D09A5EBF7BB3064EE80A705B /* OHMySQLQueryContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 82AFC359C039D8D4E7BC931408A09610 /* OHMySQLQueryContext.m */; settings = {COMPILER_FLAGS = "-Wno-incomplete-umbrella"; }; };
+		2F7CED7BC32AA42161B7C7E0AA72FA14 /* OHMySQL.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA264E7858422961609629395BE8487 /* OHMySQL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3293BE6B889780B3A5D5F988852772B0 /* FTS5CustomTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC67F036D7F2572FF7AB4517C0CE91F /* FTS5CustomTokenizer.swift */; };
+		333B62E172795AA76B6392B5B7A595B8 /* SchedulingWatchdog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFB924B80ED9963C2A00B865EE1249A /* SchedulingWatchdog.swift */; };
+		33521670341ECBA2ECE35D5B6585DA97 /* OHMySQLStoreCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C06441E869CA5DA136F2F7D50ED9267 /* OHMySQLStoreCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3384755A2D94EFD7E75943A4EF48CEED /* RowAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B77732AA78CA38A0C1EC8D1A176FCBE /* RowAdapter.swift */; };
+		34E3CE2258CC758A8639E2173B7DED50 /* OHMySQLConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC31A6723E625A116B88C92F5C968E4 /* OHMySQLConfiguration.m */; settings = {COMPILER_FLAGS = "-Wno-incomplete-umbrella"; }; };
+		3543CF500D3A639B87F9AD2C46F0088D /* DatabaseValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10817E65EBAAB5E3323C0964003D0DE /* DatabaseValue.swift */; };
+		361E3BE64A5E3DD05B3E7FB545AF2C3A /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F981D69998B84D0696602F3744C2DA28 /* CGFloat.swift */; };
+		376E84C8D9C1F2DCE228BE00DD34771A /* OHMySQLQueryTimeline.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B74B62718B07B415438F3EF14158704 /* OHMySQLQueryTimeline.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37FB3D19D7D197F9C855A07DE8A8BB0F /* SQLCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFE38DD8FF74C10450141EC3949480E /* SQLCollection.swift */; };
+		38197AB61D34B4B3A4176F03AF6FD3AD /* NSString+OHSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 1014FEAC18DC03AB87FB32F312E70277 /* NSString+OHSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38709E0D42542089514E0269E94162A0 /* OHMySQLQueryRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 781A8032C30E2270E51C9F2897975585 /* OHMySQLQueryRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BF07D4F90AC5F3A5A7785CFEB1387C6 /* TableRecord+Association.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEA04D5B7CB9AEAB0FEB0101F5A02DF /* TableRecord+Association.swift */; };
+		3C4404C4101E4F47F063340F1A1B8F69 /* OHMySQLContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFD5966EE5F10BC425D3C1D117125F7 /* OHMySQLContainer.m */; settings = {COMPILER_FLAGS = "-Wno-incomplete-umbrella"; }; };
+		3CE7976718A39A7AFAFF3A102AB3A306 /* HasOneThroughAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E84CA8381B1D6EF5EECA8BF02A7D2 /* HasOneThroughAssociation.swift */; };
+		3DB06E525F55BD72BA9634D219A652C2 /* SQLSubquery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC68F9210841881E134B02FE01D6C427 /* SQLSubquery.swift */; };
+		3DBBACD7277093C9A8D06A3A75B41362 /* FTS3Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4371A58B97DB667F310DC36594378ED /* FTS3Pattern.swift */; };
+		3E1B65F3939888A4E1793FD80D50642D /* OHMySQLStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B60632EC4EA80BB03455B0BC040DAB9 /* OHMySQLStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F37D286FED652AF8A0547D4417E373D /* OrderedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C83A2DBC51A3493168960CA15206F83 /* OrderedDictionary.swift */; };
+		3FD72EF2072C71C0B83A0A9D8B41C99B /* DatabaseFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6B0FE5381715DFCFB0C0B15C5CC1F /* DatabaseFunction.swift */; };
+		4106B70408B2CE60291546EFD03ECED1 /* FTS5TokenizerDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E39D393367EC822B25FC1BAD587A35 /* FTS5TokenizerDescriptor.swift */; };
+		44B5D05E840BE80491AC9CE7CBCAEB42 /* CharsetEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = D1C13898C1FD5D6590EBD6EB5F5802BC /* CharsetEncoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45619714C09B5147F4E828EEF7A56380 /* OHProtocolType.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5A1E7C6599E8D289F4FD60A3DE495F /* OHProtocolType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45EE8B48FA3CF0E7A65323D569586E88 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A4897C0A4FEE61FF1F588589440032 /* Record.swift */; };
+		4829733BB308818447B9012371DB093C /* OHMySQLQueryRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB359910ECEB1FD75C6CAE9CFF626E0 /* OHMySQLQueryRequestFactory.m */; settings = {COMPILER_FLAGS = "-Wno-incomplete-umbrella"; }; };
+		48468A7202B790A2DBBF4127AB30F32F /* Database+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106115B392BCDF8E2E6A171DE805A825 /* Database+Schema.swift */; };
+		4956FA58CB322CA1A97311293AE017FF /* OHMySQLStoreCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = DD742E2B7FDA447F4E5376AEF91E4113 /* OHMySQLStoreCoordinator.m */; settings = {COMPILER_FLAGS = "-Wno-incomplete-umbrella"; }; };
+		4DAA3AE367327CFA7B4C1B4C414E762E /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0490325984D78875A5995C6CFC3BFBE1 /* Optional.swift */; };
+		4E7541DEC16634508FDEF91E4191F3D4 /* SQLInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D05748C7443696D5EC420F9F02289BC /* SQLInterpolation.swift */; };
+		4F3F6E84B82EF3CA867756774258771C /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0869F7C4E492ACD67090410F37C36D65 /* FTS4.swift */; };
+		51263DA4B65520A97D8BE3396E8FDC6A /* PersistableRecord+Save.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC22CE3510238DB64E481271782DA5A1 /* PersistableRecord+Save.swift */; };
+		512981BAF54B5B4BBECB2EB6B18859F7 /* OHMySQLContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FB6685774EFABBFEC55AEC3FBBC4E06 /* OHMySQLContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5138FA9DF4C1DF05947651A7354C7293 /* OHMySQLQueryTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B0D5206D8D23676922A875FAEA1FB0 /* OHMySQLQueryTimeline.m */; settings = {COMPILER_FLAGS = "-Wno-incomplete-umbrella"; }; };
+		516538D5A22C83A17184AEF3C39F37FB /* DatabaseValueConvertible+ReferenceConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0252C8F8405C558EC88DF4807144D0 /* DatabaseValueConvertible+ReferenceConvertible.swift */; };
+		51AC97EEA6214E0C5600A66049D695DD /* MutablePersistableRecord+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = B087937D2F7387686436ED410E168520 /* MutablePersistableRecord+Delete.swift */; };
+		52BE888C4BBF27054E15A6B41A48523C /* NSString+Escaping.h in Headers */ = {isa = PBXBuildFile; fileRef = 1490681601F7163E3BD7B6338C2EF2C3 /* NSString+Escaping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53B15758DA739D6A45221EBB0CAA858D /* SQLSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC404119D8F44BFB4885E45AF0FCBD3A /* SQLSelection.swift */; };
+		53DAD42C31A8D52673B70603394DB980 /* GRDB.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26F15DAD48883FE51E241BC5B2FE3796 /* GRDB.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53F10BCF82E5C13C8ECC59A5BEA44838 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DCD50BA0F7B47706C3FE9A70E38D2D /* Table.swift */; };
+		5456E36984841F362070049010530ED2 /* DatabaseSnapshotPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E55138882A3C0E27437CD223F66F2B8 /* DatabaseSnapshotPool.swift */; };
+		55832C53C33FDE22D9EED2C322AE8F55 /* FetchableRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB59DB93CEA25FD67DF62C32ADC75842 /* FetchableRecord.swift */; };
+		58722B18DC3F8528E01A53B32950DED3 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8174A6A20379BA3A4101BBABE5F867 /* URL.swift */; };
+		5C036EC0B43D51B525705C92A6186524 /* OHMySQLQueryContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 8890AD98A3D589BE21E66856FAD678B4 /* OHMySQLQueryContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EE47A8ECD8C123E571B68F5B1ACEFDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5FA3AED4B034E0BF102DC24F5BD92218 /* FTS3TokenizerDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2864F5ACF96CC1A2441A35568A189A95 /* FTS3TokenizerDescriptor.swift */; };
+		5FFFF6D27721B763CD108559E4A6876B /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC1D3F2AAB257E03D8EB27F7C59CB7 /* Database.swift */; };
+		60CE64D95DFF4AAAD8B9E01DC7852B32 /* FTS5+QueryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037209FDCF3EE285036F2388A15CB462 /* FTS5+QueryInterface.swift */; };
+		61B7F96C746A00E776AB314B5A66DDD8 /* StandardLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF3D929D618B54762CA7A17599E437F /* StandardLibrary.swift */; };
+		62FA6AE12FE4E1C322181F36A27FF401 /* OHMySQLQueryRequestFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = AB711D7D317040382C96506A7B4202E3 /* OHMySQLQueryRequestFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		631BBA9591896C15C652AD13A7476892 /* DatabaseCancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EDC4AC08661D33F380238A77822220 /* DatabaseCancellable.swift */; };
+		6380B160E1DB9C223BA0EECB7AF0B5D5 /* DatabasePublishers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEE650E951FF6F9DEFBD92F69703CE5 /* DatabasePublishers.swift */; };
+		65CF21451D7AC1ED9B790276134CA4A3 /* FTS3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2297E642130C24DBCA9D8C5862109C /* FTS3.swift */; };
+		672767DF165644D1C34B5CF6CB505E18 /* NSString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9A8ABF37A568E7B8D94893F693FA44 /* NSString+Utility.m */; settings = {COMPILER_FLAGS = "-Wno-incomplete-umbrella"; }; };
+		67476DAA27E9DA894C58E3D64B926973 /* ForeignKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67AF82C442E22AB62F5DA9DC06AE0FE /* ForeignKey.swift */; };
+		68F70EB6CC92E261F4D5CE1914F51FD1 /* DatabaseRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B99A17966EACF7D7ACACEAD1392A68 /* DatabaseRegion.swift */; };
+		69C62F5BC5276E465D889E9C555B538E /* SerializedDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFCC7DE19B2DA4639A6D5980190B9A0 /* SerializedDatabase.swift */; };
+		6AC4BEBB792C364765413A9BF1217A69 /* Decimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437AE412311AC5E5ED7C609F78F9E8D /* Decimal.swift */; };
+		6DE11B092EC25B46D44583CED7AAB175 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6E58324F699B2A1FDA728E9ADE7B901C /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998F481D51C1266CC8C1695EFFF53844 /* Map.swift */; };
+		6E625F4AEADC1CA5C1C292ACF07ACCA7 /* OHMySQLQueryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FA07E8B94D300CA223B26BF1819400C6 /* OHMySQLQueryRequest.m */; settings = {COMPILER_FLAGS = "-Wno-incomplete-umbrella"; }; };
+		6F1506FBD94EC36246E362FEE9C04F12 /* SQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C785F2E2179D264D1754A1AEE21BE366 /* SQL.swift */; };
+		75FB5A375B3344CDBBCE9BEE9F8E079E /* NSNumber+OHSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FA478A9483AB9C432BA7377B8C602431 /* NSNumber+OHSerialization.m */; settings = {COMPILER_FLAGS = "-Wno-incomplete-umbrella"; }; };
+		76528ECBDBEF763B62501B53CF313BAB /* MutablePersistableRecord+Save.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CB0DC5FB95D9B3F30419989A462FF4 /* MutablePersistableRecord+Save.swift */; };
+		76FB7B6F3B27F442AB13DDC3535DC7FE /* OHResultErrorType.h in Headers */ = {isa = PBXBuildFile; fileRef = 225E5B0E5BA52A60F98F366363E9D639 /* OHResultErrorType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A2A76E5DCF8E6ADA8F9C4C0EBC60861 /* ValueWriteOnlyObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113BD6D01FDC273C8F51326B7110D31A /* ValueWriteOnlyObserver.swift */; };
+		7A64A63639B79F0B38A51E960FFFFACE /* Inflections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D8128B05C5CC52476DF85CC0193B79 /* Inflections.swift */; };
+		7B42F3549B79318DAA95000FF58C82EA /* OHMySQLStore.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5BE2FF832ACFB36D5BD8D6E3573A89 /* OHMySQLStore.m */; settings = {COMPILER_FLAGS = "-Wno-incomplete-umbrella"; }; };
+		7BC05969C0FAEDDD69F39437F961B131 /* SQLiteDateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1970BFA207DF56323DC9CC6AE5444C /* SQLiteDateParser.swift */; };
+		7BE7CD18C758BD5E9D0E15969350FDCF /* QueryInterfaceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FE60340533A5F0CBCE19800C74D55 /* QueryInterfaceRequest.swift */; };
+		7CAC33206D276DB9BB1702B625CF38C2 /* NSData+OHSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6B4C98E57FB66A454D9AE74EC17A3C /* NSData+OHSerialization.m */; settings = {COMPILER_FLAGS = "-Wno-incomplete-umbrella"; }; };
+		7D2045A54A3C6672A92B782F2D6EDEB9 /* NSObject+Mapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C0695E9D88ACC6E3998D09FC30F3AB9 /* NSObject+Mapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DC95A507D0B12A0AF295C86D2EBAC73 /* MutablePersistableRecord+Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB5DDCB73AD9753EB140A67677A619 /* MutablePersistableRecord+Update.swift */; };
+		7F9905F3B5C852B4232B2CEEA9F68817 /* FTS5Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7A839E137F78897697B53BC355BB8C /* FTS5Tokenizer.swift */; };
+		812A5731E46DBD341897B159703F16F2 /* DatabaseValueConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630AD5196B4835BCE0D0DC11DE97686E /* DatabaseValueConvertible.swift */; };
+		8166EB0F728954C184CCD8EBFACB585E /* Trace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F75E0586820CAE7D24E5A4913CC116 /* Trace.swift */; };
+		858429680DDFF4F1BCB75E286119468C /* OHSSLConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 740253AD022F2267E80F68400DA8F583 /* OHSSLConfig.m */; settings = {COMPILER_FLAGS = "-Wno-incomplete-umbrella"; }; };
+		8595ED7FEF50C66E33805C7C43883E60 /* Cursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C247CE998573C6D508033A58F69A2DEB /* Cursor.swift */; };
+		88BD1C32C5CFB089F3065CF4C8D3481A /* DatabasePromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70714CF71D4EDE43B788676BDE589B6A /* DatabasePromise.swift */; };
+		88C70BD1FD192F9B83F2586163C6121B /* GrowingTextView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BFA9E638FEB40FEA1640805B9AE63F4 /* GrowingTextView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88DCE9B88649B6E53F18523601949A84 /* PersistableRecord+Insert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F8E6023D1303FAEBC9C015B542E221 /* PersistableRecord+Insert.swift */; };
+		8A2ED390D4CA126BB504D4F603B6E16A /* OHConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B428E0D2E4DC5564032E72E98841A67 /* OHConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B8CAB89DE15088220B0CC68875657E3 /* SQLGenerationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14602DAA864467C21F4EE63808BFFB08 /* SQLGenerationContext.swift */; };
+		8C6C1AF9A775BC2EFC579815F71CFFBC /* SQLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04E1B6DD11F636D98B3D8E3ECE0572F /* SQLRequest.swift */; };
+		8E4D87D5D4C1EAB154DABE2AB2F20598 /* TransactionClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053F9FF86E30B72C1C4843856A9530BE /* TransactionClock.swift */; };
+		8EDFB5B45069C22707FA598A2ADDDB39 /* DatabaseSchemaCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD665A455BA4D29815BEAD8C5C68FD3 /* DatabaseSchemaCache.swift */; };
+		91ECA5C71900C87DD05D3843FD218F05 /* StatementColumnConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5565006903EE1A388E9CA8232009F70 /* StatementColumnConvertible.swift */; };
+		9307965AA05830C534DB64602838D96D /* EncodableRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AA15DAC40FE8978B3B2BABF0C4A2BD /* EncodableRecord.swift */; };
+		9400F91563B4FB15CCF4629E43895BE9 /* Fixits.swift in Sources */ = {isa = PBXBuildFile; fileRef = B158559394B801F8EEF9E5C19EA79A93 /* Fixits.swift */; };
+		94208BE491946CAC5AACC324F0EBAEDA /* DatabaseQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D411CAC9EE6712AC598C0D263FA9780 /* DatabaseQueue.swift */; };
+		9509FE0F8B08C4B61D1D8915B6297AF3 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13976EA540F4A59508E3AF0D1D233743 /* Utils.swift */; };
+		988E2E4756AFE3D56598CCA9E0F2616F /* GRDB.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D2961998AA8AED92B4AD9B88B7B87C /* GRDB.swift-dummy.m */; };
+		990DF13448B97E48DF6472A8F6729F13 /* OHJoinConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = B4978C67A0A717CF8EA08FBD75BEEB35 /* OHJoinConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A4AB19A7DAFEBE330CE6A239AFCDF1A /* FTS5Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFAF289C714C4EC186D0369F0D9DCFD /* FTS5Pattern.swift */; };
+		9A66AC1B8B789DC26EDE63C5BEC700D7 /* OHSerializationProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2166CFA8CB92C107D32E2BE116556A1A /* OHSerializationProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B07ECF94DE28D10249B8B08368440CE /* FetchableRecord+TableRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BA35F1855DAA9EB08C30527B045156 /* FetchableRecord+TableRecord.swift */; };
+		9B5D13890B462678154555216E9FB4FC /* SQLOrdering.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2899E5FF305A757DC68ED7D9D5B9E00 /* SQLOrdering.swift */; };
+		9C4493BDD9A6850AC4EAD710042CA2BC /* ButtonOnKeyboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7283CCDAB5F3B65788B7188F808B2CF9 /* ButtonOnKeyboard-dummy.m */; };
+		9CD248BD987C169EA8BB2E2FFA95C8B5 /* GrowingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF353604013A0851FF2BC3164510691E /* GrowingTextView.swift */; };
+		9D27FB99A7E5BCA6038CB835C5DC47FF /* DatabaseRegionObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0144F6CE4EF991BBE793BD361A21E900 /* DatabaseRegionObservation.swift */; };
+		9E5EBF122127C0D9955C8D3225144C51 /* BelongsToAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E879B2042840F2AF04B5D50F63149CA5 /* BelongsToAssociation.swift */; };
+		9F9080C887675C6B6DBC9438D88E1829 /* NSData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FBEE81574E6A98DD6934AE2CC4F114 /* NSData.swift */; };
+		9FFD0DAD6370A7C7941C9B35D981702C /* JSONRequiredEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86CA382E5B7A0118AE41F0008EBD592 /* JSONRequiredEncoder.swift */; };
+		A34FFC75EC3840DA3B9BC661AEFB3BB0 /* DatabaseDateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4FFB296C7AE38E68E1FE50739DBA65 /* DatabaseDateComponents.swift */; };
+		AA75A7B8B8D3121799C86463D5751229 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749210F115432B7F72BB489827A543CF /* Date.swift */; };
+		AAC11D83C17060FA291FB5FF2019043B /* NSString+Utility.h in Headers */ = {isa = PBXBuildFile; fileRef = E7F0E4C89B442E567C80CB9086AB6D6B /* NSString+Utility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC9607CB4761F349E71CF80CF8BCAF07 /* SQLFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8B9E9991146409E601727E3E3C4B44 /* SQLFunctions.swift */; };
+		AE9A3E109515B5F7AC594805A15639FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		AF23F9EB803296D23BD3DEB2C292E4D4 /* TransactionObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66AC32D35BF8255216843B187E4E815 /* TransactionObserver.swift */; };
+		AF88FEEBC14DB41E8727FB7EC33C7320 /* SQLQueryGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E431A74C3FEC150EF43FBFC33F296B /* SQLQueryGenerator.swift */; };
+		B000CCF393349F10DB3D44101375CE11 /* TableDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAEE237D4A8992EB5FEC196BB348F35 /* TableDefinition.swift */; };
+		B00984B12D82F089A1FB3D6734075D9B /* Column.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6243751DD851010F23F7FC5B181E19 /* Column.swift */; };
+		B04CDAFF45B40CEA4BBD5D37AB82248D /* NSNumber+OHSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = A7E60EAAB59D076E5F6AC5CDAADFFF8F /* NSNumber+OHSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B662D92C3FF53F007D50609812400EB5 /* Association.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3D728DDC373DDBA91EA2B927D489F1 /* Association.swift */; };
+		B6685DEAC389959356E2BE8537130FA1 /* DatabaseReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3055D58B7C923D0F5381E531870AD2B /* DatabaseReader.swift */; };
+		B84AD7A8805F41EE2100FE0B107AAA0E /* FTS3+QueryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A2A5C2FD2815C35643E651241DE54F /* FTS3+QueryInterface.swift */; };
+		BB106AD74E6338B532096BDECBCF651D /* NSNull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186433DBC88F344405FD11775E2DBD85 /* NSNull.swift */; };
+		BCEDCA19FE327AC2BBDCE624B1CEAC49 /* NSString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F6049CD7B305CB3BC6473233F8F064 /* NSString.swift */; };
+		BFAC380A25C873B355B6520A5E7695E4 /* Pods-AttendanceReportManagementApplication-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 705AAA61330411627D58328CFCFC7205 /* Pods-AttendanceReportManagementApplication-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C07F7358C719417559E11F03739709F7 /* CommonTableExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A793D9EC7728731EC1AC386AE73CE /* CommonTableExpression.swift */; };
+		C0C9E7993596DDD3BF6344746FDE8F4C /* DatabaseCollation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67E99AE113219BCD72BDD97F4C231D5 /* DatabaseCollation.swift */; };
+		C14CC3D22DEE619B8E1EB54FF8199498 /* EncodableRecord+Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC6D7540788F80C05562FD049CD39A /* EncodableRecord+Encodable.swift */; };
+		C1D15272EC35A7BFE9862616F6F54ED0 /* ValueObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A477B024C7860344D36CF967950ED8 /* ValueObservation.swift */; };
+		C24D3ED6A3FD148DB5D3D1BEBF966EFF /* OHRefreshOption.h in Headers */ = {isa = PBXBuildFile; fileRef = 3009DF9184FBF36C24D81F396BB13148 /* OHRefreshOption.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C28347F71CBF37B04F7B02022BD28592 /* ReadWriteBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32346873688687C4E40ABB55C9BEFED /* ReadWriteBox.swift */; };
+		C417A36D849AF546A7C3B6E2732A525B /* SQLInterpolation+QueryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E090445BFCBE7D3B7FFA1621782CDF /* SQLInterpolation+QueryInterface.swift */; };
+		C45EEB6BECA6BDCD82DFC904121CECC7 /* ButtonOnKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF94D3B745FF9946F6A8FB9A06EF19 /* ButtonOnKeyboard.swift */; };
+		C47A5DB38F197836FB9D35AAE1EC746E /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F9E1BDB65D4DC500D31381F40082F /* Configuration.swift */; };
+		C6C2F8BC95B08B457AA505420DCC3E69 /* HasOneAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201DE59E6B5AB5AEC1524F2ECE957BA2 /* HasOneAssociation.swift */; };
+		C8BA858B937DDBE3B795485572011F67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C9C8F4FB210CF09B9F80F4C21E12EB76 /* NSNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575E493EF2E73E4C503AE0D6B2408CED /* NSNumber.swift */; };
+		CB1DE556214E32A9D25474ADC00DFD9F /* MutablePersistableRecord+DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8ABA9A2B0942EB70AFC5DE9E243CAF /* MutablePersistableRecord+DAO.swift */; };
+		CF0C01E9DAD2B172677B4622C8DBD71B /* WALSnapshotTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC082F4379DCF902B4A2DD186B84921 /* WALSnapshotTransaction.swift */; };
+		CFECBCD23032D49890A898C0D87D5060 /* DatabasePool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832534C46DBF1FD148CFEE09891692D6 /* DatabasePool.swift */; };
+		D042A3D1E7E95D54D7DB0E558BBCF9AF /* VirtualTableModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D16873CE8C84AD6E7C6818BE8ED6BF9 /* VirtualTableModule.swift */; };
+		D0672D96A4BF31CF7414FA94217C9362 /* Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A735A8E0BE694615D227C6B2D809953D /* Fetch.swift */; };
+		D071E12513014DE15BEB39FD7F0EBC4F /* DatabaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC18978386D6944680D88AA06FD21D /* DatabaseError.swift */; };
+		D0BA729FF7DE3C360D9EF6DDFB5C923C /* ValueConcurrentObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B72F6A53D0C1E7A3C38CC94AB496C6F /* ValueConcurrentObserver.swift */; };
+		D2EE9DCE29A2A9254EEFA833552DD70E /* WALSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15397386FCBCDBD0697E6B3E50249078 /* WALSnapshot.swift */; };
+		D352848063A939FC2DB925F12E7C4818 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D91458FE2F4C13058F88E64AB43DDE14 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45A784599A4ACFC9424DCF6EE1D8526 /* Statement.swift */; };
+		D96FD8256EBF39C14CECE1D223FCE277 /* SQLAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341385603D73B1B7DA041D9BD27A02F9 /* SQLAssociation.swift */; };
+		D9D4C703A2D219C170A0CDEC16FC9675 /* ValueReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE1BF7BE9B42AE5DE67F967306F5202 /* ValueReducer.swift */; };
+		DAC9CC39CC906D8937E05EFC1379EE0D /* OHMySQL-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D086984F75AC3E3E5D6DC40B44070EB /* OHMySQL-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDD3C75DF37F8BF4D48218B4F2849F55 /* SQLForeignKeyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66371364E47C7229CEEA0BB90772A1EB /* SQLForeignKeyRequest.swift */; };
+		DFB82C94F985BFBD7E2445648582D36E /* ReceiveValuesOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCD9C895B25D1FC88C69018FBE9DE78 /* ReceiveValuesOn.swift */; };
+		E060CA7906ACEFE27705881A25B80431 /* RemoveDuplicates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0908CBB0A8B25B2F9632A9D135984898 /* RemoveDuplicates.swift */; };
+		E20DF912C3729B6578913137EF7174FA /* NSObject+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = E838B9F6F8E23C4A25667E612AF1C4B8 /* NSObject+Mapping.m */; settings = {COMPILER_FLAGS = "-Wno-incomplete-umbrella"; }; };
+		E5E0100F378016E9F59D4B26D408CD3C /* OHResultErrorType.m in Sources */ = {isa = PBXBuildFile; fileRef = 937C0CB6642A38B055C49F62A19C85C9 /* OHResultErrorType.m */; settings = {COMPILER_FLAGS = "-Wno-incomplete-umbrella"; }; };
+		E75384E77F45BF39F724220CF9D903BE /* OHMySQLSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E828796B39368E031180E15B6CBD02 /* OHMySQLSerialization.m */; settings = {COMPILER_FLAGS = "-Wno-incomplete-umbrella"; }; };
+		E76FC4F2B936ADE2EEAC0C7E28063F7F /* NSString+OHSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A0F4A992C897241766CA15DE70036F /* NSString+OHSerialization.m */; settings = {COMPILER_FLAGS = "-Wno-incomplete-umbrella"; }; };
+		EBD3171028608C12B4D63B0951D785DB /* LockedBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906D52353673070108E5851CA70DB320 /* LockedBox.swift */; };
+		EE23C890401DF845AEDF590EE07D1E05 /* MutablePersistableRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FE73F45119C48E9F24719E5250FD08 /* MutablePersistableRecord.swift */; };
+		EE344F18EE3FF3DAED6FBFDFD15B0127 /* Pool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BE7A43A804CCD2E936975938285D70 /* Pool.swift */; };
+		EF94E548FCF79C53B596A1104D435A72 /* PersistableRecord+Upsert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F0BE6642570E2755BE0874A3911EF /* PersistableRecord+Upsert.swift */; };
+		F205C2A99B499AFE0B556F7BE76674F4 /* SQLRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D8F48D64B85741C56896640759F531 /* SQLRelation.swift */; };
+		F2328F7EF7115EC835354EA71F4BB325 /* Database+Statements.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC039E247D488043AD55DE0E14D1788B /* Database+Statements.swift */; };
+		F251D35FBEDC5AD3483828572F8F355D /* FetchableRecord+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F3E7A561506ABD9328D23AAF6C78BD /* FetchableRecord+Decodable.swift */; };
+		F42AF4D609F5496DE3C5B7306DB9040A /* HasManyAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207560C0B9ADCEE32606AD5598CD37E2 /* HasManyAssociation.swift */; };
+		F44B0ADDFB9D13D3F50699A680EB36EB /* DatabaseWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C22FD4FEBE7B5D36F0B7670AFAA2F21 /* DatabaseWriter.swift */; };
+		F550BCDA6898D86E56C7F1CD7B719B6C /* MutablePersistableRecord+Upsert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C2897895E9B3BCCE6A203CDE8B37EF /* MutablePersistableRecord+Upsert.swift */; };
+		FA38CECC36C1FE07F33BA576630AD4A1 /* ButtonOnKeyboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AFD3BA2709860B474581068DD6871EA /* ButtonOnKeyboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC00527D206155B0D31F79902F3733C /* Inflections+English.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED4F0FE65C31B6C270E88C384F5E0C /* Inflections+English.swift */; };
+		FCAE9320F2296CF5322687AA68D2E6A3 /* GrowingTextView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD8F5CF39C9609AB9E0FBCFD7481C3D /* GrowingTextView-dummy.m */; };
+		FDC6C1DCB0976A1549C190FA07AB80BE /* Refinable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DA3E60C2331B31A88821B657011231 /* Refinable.swift */; };
+		FEF59FC6D176CF41A89132B43E00EA20 /* FTS5WrapperTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599246687B6A827E36B211E2F196F9A6 /* FTS5WrapperTokenizer.swift */; };
+		FFA8593AB25E5F27DFC903E4C6BD6BD6 /* OHMySQLConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = AEC887AC65B139FC3D3E3E2456C14B1E /* OHMySQLConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		053CF7CDC775E161A2574435C6322D47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A86C228CFCBC35A1FD284274ED0930F;
+			remoteInfo = GRDB.swift;
+		};
+		38DE2B90913A3855313CC6ACFD3F26DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 523C0639A1C4C93383B4DF83058D0094;
+			remoteInfo = OHMySQL;
+		};
+		690584FE805398EAE364E20A78418A4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46A930DCB8911656E995579CD67785EF;
+			remoteInfo = ButtonOnKeyboard;
+		};
+		C7DB09184D7A4C3B69879A7B74771461 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1696A504A8F8B95B82B2382D0A461BF4;
+			remoteInfo = GrowingTextView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0142D8F0E2B55397F2C0F97729F8B422 /* GrowingTextView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GrowingTextView-prefix.pch"; sourceTree = "<group>"; };
+		0144F6CE4EF991BBE793BD361A21E900 /* DatabaseRegionObservation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseRegionObservation.swift; path = GRDB/Core/DatabaseRegionObservation.swift; sourceTree = "<group>"; };
+		016E1C582BD3D234711E4B17FA4FAA0A /* GRDB.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GRDB.swift-prefix.pch"; sourceTree = "<group>"; };
+		01E2CE63C90987897D4B5674F48D8298 /* Pods-AttendanceReportManagementApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AttendanceReportManagementApplication.release.xcconfig"; sourceTree = "<group>"; };
+		037209FDCF3EE285036F2388A15CB462 /* FTS5+QueryInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FTS5+QueryInterface.swift"; path = "GRDB/QueryInterface/FTS5+QueryInterface.swift"; sourceTree = "<group>"; };
+		03DC6D7540788F80C05562FD049CD39A /* EncodableRecord+Encodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "EncodableRecord+Encodable.swift"; path = "GRDB/Record/EncodableRecord+Encodable.swift"; sourceTree = "<group>"; };
+		048F9E1BDB65D4DC500D31381F40082F /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = GRDB/Core/Configuration.swift; sourceTree = "<group>"; };
+		0490325984D78875A5995C6CFC3BFBE1 /* Optional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Optional.swift; path = GRDB/Core/Support/StandardLibrary/Optional.swift; sourceTree = "<group>"; };
+		04E090445BFCBE7D3B7FFA1621782CDF /* SQLInterpolation+QueryInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SQLInterpolation+QueryInterface.swift"; path = "GRDB/QueryInterface/SQLInterpolation+QueryInterface.swift"; sourceTree = "<group>"; };
+		053F9FF86E30B72C1C4843856A9530BE /* TransactionClock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransactionClock.swift; path = GRDB/Core/TransactionClock.swift; sourceTree = "<group>"; };
+		05CE4E1C0902E50C902A8732F0F7A4EB /* GRDB.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GRDB.swift-Info.plist"; sourceTree = "<group>"; };
+		06C66E4402FADF5084BD12362093143F /* Pods-AttendanceReportManagementApplication-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AttendanceReportManagementApplication-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0869F7C4E492ACD67090410F37C36D65 /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = GRDB/FTS/FTS4.swift; sourceTree = "<group>"; };
+		0908CBB0A8B25B2F9632A9D135984898 /* RemoveDuplicates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoveDuplicates.swift; path = GRDB/ValueObservation/Reducers/RemoveDuplicates.swift; sourceTree = "<group>"; };
+		0BFA9E638FEB40FEA1640805B9AE63F4 /* GrowingTextView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GrowingTextView-umbrella.h"; sourceTree = "<group>"; };
+		0E8ABA9A2B0942EB70AFC5DE9E243CAF /* MutablePersistableRecord+DAO.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MutablePersistableRecord+DAO.swift"; path = "GRDB/Record/MutablePersistableRecord+DAO.swift"; sourceTree = "<group>"; };
+		0E97D0023A0AF5BB7AE934B8A7C9CB6E /* TableRecord+QueryInterfaceRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableRecord+QueryInterfaceRequest.swift"; path = "GRDB/QueryInterface/TableRecord+QueryInterfaceRequest.swift"; sourceTree = "<group>"; };
+		1014FEAC18DC03AB87FB32F312E70277 /* NSString+OHSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+OHSerialization.h"; path = "OHMySQL/Sources/Categories/NSString+OHSerialization.h"; sourceTree = "<group>"; };
+		106115B392BCDF8E2E6A171DE805A825 /* Database+Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Database+Schema.swift"; path = "GRDB/Core/Database+Schema.swift"; sourceTree = "<group>"; };
+		113BD6D01FDC273C8F51326B7110D31A /* ValueWriteOnlyObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValueWriteOnlyObserver.swift; path = GRDB/ValueObservation/Observers/ValueWriteOnlyObserver.swift; sourceTree = "<group>"; };
+		11E3AF6019B6DBF819144A96C35EC6EA /* Pods-AttendanceReportManagementApplication-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AttendanceReportManagementApplication-frameworks.sh"; sourceTree = "<group>"; };
+		13976EA540F4A59508E3AF0D1D233743 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = GRDB/Utils/Utils.swift; sourceTree = "<group>"; };
+		13ED4F0FE65C31B6C270E88C384F5E0C /* Inflections+English.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Inflections+English.swift"; path = "GRDB/Utils/Inflections+English.swift"; sourceTree = "<group>"; };
+		140FF461170E3E511C87A789EDC3CED9 /* OHMySQL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OHMySQL-dummy.m"; sourceTree = "<group>"; };
+		14602DAA864467C21F4EE63808BFFB08 /* SQLGenerationContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLGenerationContext.swift; path = GRDB/QueryInterface/SQLGeneration/SQLGenerationContext.swift; sourceTree = "<group>"; };
+		1490681601F7163E3BD7B6338C2EF2C3 /* NSString+Escaping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Escaping.h"; path = "OHMySQL/Sources/Categories/NSString+Escaping.h"; sourceTree = "<group>"; };
+		15397386FCBCDBD0697E6B3E50249078 /* WALSnapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WALSnapshot.swift; path = GRDB/Core/WALSnapshot.swift; sourceTree = "<group>"; };
+		17ABD68E920293F080122810A8881638 /* GRDB.swift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GRDB.swift; path = GRDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17EE1DD53A7DA75CEDA46874F4B35F70 /* GRDB.swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GRDB.swift.debug.xcconfig; sourceTree = "<group>"; };
+		17F6049CD7B305CB3BC6473233F8F064 /* NSString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSString.swift; path = GRDB/Core/Support/Foundation/NSString.swift; sourceTree = "<group>"; };
+		182575072952B9A0B6F33889CBD8169C /* FetchRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FetchRequest.swift; path = GRDB/Core/FetchRequest.swift; sourceTree = "<group>"; };
+		186433DBC88F344405FD11775E2DBD85 /* NSNull.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSNull.swift; path = GRDB/Core/Support/Foundation/NSNull.swift; sourceTree = "<group>"; };
+		196BB412712A66BDEC6ABFAC4BC95E1A /* Pods-AttendanceReportManagementApplication-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AttendanceReportManagementApplication-acknowledgements.plist"; sourceTree = "<group>"; };
+		1D9A8ABF37A568E7B8D94893F693FA44 /* NSString+Utility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Utility.m"; path = "OHMySQL/Sources/Categories/NSString+Utility.m"; sourceTree = "<group>"; };
+		1E55138882A3C0E27437CD223F66F2B8 /* DatabaseSnapshotPool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseSnapshotPool.swift; path = GRDB/Core/DatabaseSnapshotPool.swift; sourceTree = "<group>"; };
+		201DE59E6B5AB5AEC1524F2ECE957BA2 /* HasOneAssociation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HasOneAssociation.swift; path = GRDB/QueryInterface/Request/Association/HasOneAssociation.swift; sourceTree = "<group>"; };
+		202B73780B12D492D23D84459D68E942 /* StatementAuthorizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatementAuthorizer.swift; path = GRDB/Core/StatementAuthorizer.swift; sourceTree = "<group>"; };
+		207560C0B9ADCEE32606AD5598CD37E2 /* HasManyAssociation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HasManyAssociation.swift; path = GRDB/QueryInterface/Request/Association/HasManyAssociation.swift; sourceTree = "<group>"; };
+		2166CFA8CB92C107D32E2BE116556A1A /* OHSerializationProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHSerializationProtocol.h; path = OHMySQL/Sources/OHSerializationProtocol.h; sourceTree = "<group>"; };
+		21A2A5C2FD2815C35643E651241DE54F /* FTS3+QueryInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FTS3+QueryInterface.swift"; path = "GRDB/QueryInterface/FTS3+QueryInterface.swift"; sourceTree = "<group>"; };
+		225E5B0E5BA52A60F98F366363E9D639 /* OHResultErrorType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHResultErrorType.h; path = OHMySQL/Sources/Constants/OHResultErrorType.h; sourceTree = "<group>"; };
+		26F15DAD48883FE51E241BC5B2FE3796 /* GRDB.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GRDB.swift-umbrella.h"; sourceTree = "<group>"; };
+		27E092BA71579CD892C9BECB47EF6C19 /* GrowingTextView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GrowingTextView-Info.plist"; sourceTree = "<group>"; };
+		2864F5ACF96CC1A2441A35568A189A95 /* FTS3TokenizerDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS3TokenizerDescriptor.swift; path = GRDB/FTS/FTS3TokenizerDescriptor.swift; sourceTree = "<group>"; };
+		28CC118CFFE52C528536125CE2C7F2D9 /* Pods-AttendanceReportManagementApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AttendanceReportManagementApplication.debug.xcconfig"; sourceTree = "<group>"; };
+		2A4BE4329A0B059EC4E4238661A1EFC7 /* DatabaseValueConvertible+Decodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DatabaseValueConvertible+Decodable.swift"; path = "GRDB/Core/Support/StandardLibrary/DatabaseValueConvertible+Decodable.swift"; sourceTree = "<group>"; };
+		2C1970BFA207DF56323DC9CC6AE5444C /* SQLiteDateParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLiteDateParser.swift; path = GRDB/Core/Support/Foundation/SQLiteDateParser.swift; sourceTree = "<group>"; };
+		2D086984F75AC3E3E5D6DC40B44070EB /* OHMySQL-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHMySQL-umbrella.h"; sourceTree = "<group>"; };
+		2D2297E642130C24DBCA9D8C5862109C /* FTS3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS3.swift; path = GRDB/FTS/FTS3.swift; sourceTree = "<group>"; };
+		2D3D728DDC373DDBA91EA2B927D489F1 /* Association.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Association.swift; path = GRDB/QueryInterface/Request/Association/Association.swift; sourceTree = "<group>"; };
+		2DBA7AF1ECB8B1086F5190BE121BBD55 /* OHLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHLogging.h; path = OHMySQL/Sources/Constants/OHLogging.h; sourceTree = "<group>"; };
+		3009DF9184FBF36C24D81F396BB13148 /* OHRefreshOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHRefreshOption.h; path = OHMySQL/Sources/Constants/OHRefreshOption.h; sourceTree = "<group>"; };
+		300B3B5B3E4920FCC8D8DFD4F080C176 /* DatabaseValueConvertible+RawRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DatabaseValueConvertible+RawRepresentable.swift"; path = "GRDB/Core/Support/StandardLibrary/DatabaseValueConvertible+RawRepresentable.swift"; sourceTree = "<group>"; };
+		30E431A74C3FEC150EF43FBFC33F296B /* SQLQueryGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLQueryGenerator.swift; path = GRDB/QueryInterface/SQLGeneration/SQLQueryGenerator.swift; sourceTree = "<group>"; };
+		31E964D335C3ED18F175596EA798E06C /* GRDB.swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GRDB.swift.release.xcconfig; sourceTree = "<group>"; };
+		31F8E6023D1303FAEBC9C015B542E221 /* PersistableRecord+Insert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PersistableRecord+Insert.swift"; path = "GRDB/Record/PersistableRecord+Insert.swift"; sourceTree = "<group>"; };
+		32860FDE89C41BB52ED4C76F11BD0B93 /* CharsetEncoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CharsetEncoding.m; path = OHMySQL/Sources/Constants/CharsetEncoding.m; sourceTree = "<group>"; };
+		341385603D73B1B7DA041D9BD27A02F9 /* SQLAssociation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLAssociation.swift; path = GRDB/QueryInterface/SQL/SQLAssociation.swift; sourceTree = "<group>"; };
+		34DCDEB51EBC83A689FCE6013719582F /* ButtonOnKeyboard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ButtonOnKeyboard.modulemap; sourceTree = "<group>"; };
+		358B50F923218FF1CB58C56AA9DD9E56 /* SharedValueObservation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SharedValueObservation.swift; path = GRDB/ValueObservation/SharedValueObservation.swift; sourceTree = "<group>"; };
+		358C4D04CB1FB9AD8BDE847B2435DEA2 /* OHSSLConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHSSLConfig.h; path = OHMySQL/Sources/Models/OHSSLConfig.h; sourceTree = "<group>"; };
+		35B0D5206D8D23676922A875FAEA1FB0 /* OHMySQLQueryTimeline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLQueryTimeline.m; path = OHMySQL/Sources/Models/OHMySQLQueryTimeline.m; sourceTree = "<group>"; };
+		37A0F4A992C897241766CA15DE70036F /* NSString+OHSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+OHSerialization.m"; path = "OHMySQL/Sources/Categories/NSString+OHSerialization.m"; sourceTree = "<group>"; };
+		3990F8FE166AEE51FDCD134A09A264DE /* OHJoinConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHJoinConstants.m; path = OHMySQL/Sources/Constants/OHJoinConstants.m; sourceTree = "<group>"; };
+		3A9C309EDA2A3D471325B7CACEE6D08C /* DatabaseBackupProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseBackupProgress.swift; path = GRDB/Core/DatabaseBackupProgress.swift; sourceTree = "<group>"; };
+		3AFD3BA2709860B474581068DD6871EA /* ButtonOnKeyboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ButtonOnKeyboard-umbrella.h"; sourceTree = "<group>"; };
+		3B72F6A53D0C1E7A3C38CC94AB496C6F /* ValueConcurrentObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValueConcurrentObserver.swift; path = GRDB/ValueObservation/Observers/ValueConcurrentObserver.swift; sourceTree = "<group>"; };
+		3F6243751DD851010F23F7FC5B181E19 /* Column.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Column.swift; path = GRDB/QueryInterface/SQL/Column.swift; sourceTree = "<group>"; };
+		43F75E0586820CAE7D24E5A4913CC116 /* Trace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Trace.swift; path = GRDB/ValueObservation/Reducers/Trace.swift; sourceTree = "<group>"; };
+		440181DC7C85701AEDA7BB32158F7FA8 /* OHMySQL-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OHMySQL-Info.plist"; sourceTree = "<group>"; };
+		46D8F48D64B85741C56896640759F531 /* SQLRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLRelation.swift; path = GRDB/QueryInterface/SQL/SQLRelation.swift; sourceTree = "<group>"; };
+		47081A0CA7904B07ECCA5F3DAB1D0B8B /* GrowingTextView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GrowingTextView.release.xcconfig; sourceTree = "<group>"; };
+		49238935787F5A0C0780105255AA5637 /* RowDecodingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowDecodingError.swift; path = GRDB/Core/RowDecodingError.swift; sourceTree = "<group>"; };
+		49974F7468CF20FB214AE038D8DBD7DE /* Pods-AttendanceReportManagementApplication-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AttendanceReportManagementApplication-dummy.m"; sourceTree = "<group>"; };
+		4AA264E7858422961609629395BE8487 /* OHMySQL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQL.h; path = OHMySQL/Sources/OHMySQL.h; sourceTree = "<group>"; };
+		4AE1BF7BE9B42AE5DE67F967306F5202 /* ValueReducer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValueReducer.swift; path = GRDB/ValueObservation/Reducers/ValueReducer.swift; sourceTree = "<group>"; };
+		4B428E0D2E4DC5564032E72E98841A67 /* OHConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHConstants.h; path = OHMySQL/Sources/Constants/OHConstants.h; sourceTree = "<group>"; };
+		4B77732AA78CA38A0C1EC8D1A176FCBE /* RowAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowAdapter.swift; path = GRDB/Core/RowAdapter.swift; sourceTree = "<group>"; };
+		4BCD9C895B25D1FC88C69018FBE9DE78 /* ReceiveValuesOn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReceiveValuesOn.swift; path = GRDB/Utils/ReceiveValuesOn.swift; sourceTree = "<group>"; };
+		4D411CAC9EE6712AC598C0D263FA9780 /* DatabaseQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseQueue.swift; path = GRDB/Core/DatabaseQueue.swift; sourceTree = "<group>"; };
+		4DFAF289C714C4EC186D0369F0D9DCFD /* FTS5Pattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5Pattern.swift; path = GRDB/FTS/FTS5Pattern.swift; sourceTree = "<group>"; };
+		4DFC18978386D6944680D88AA06FD21D /* DatabaseError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseError.swift; path = GRDB/Core/DatabaseError.swift; sourceTree = "<group>"; };
+		575E493EF2E73E4C503AE0D6B2408CED /* NSNumber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSNumber.swift; path = GRDB/Core/Support/Foundation/NSNumber.swift; sourceTree = "<group>"; };
+		58DA3E60C2331B31A88821B657011231 /* Refinable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Refinable.swift; path = GRDB/Utils/Refinable.swift; sourceTree = "<group>"; };
+		599246687B6A827E36B211E2F196F9A6 /* FTS5WrapperTokenizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5WrapperTokenizer.swift; path = GRDB/FTS/FTS5WrapperTokenizer.swift; sourceTree = "<group>"; };
+		5C0695E9D88ACC6E3998D09FC30F3AB9 /* NSObject+Mapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Mapping.h"; path = "OHMySQL/Sources/Categories/NSObject+Mapping.h"; sourceTree = "<group>"; };
+		5C83A2DBC51A3493168960CA15206F83 /* OrderedDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderedDictionary.swift; path = GRDB/Utils/OrderedDictionary.swift; sourceTree = "<group>"; };
+		5D05748C7443696D5EC420F9F02289BC /* SQLInterpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLInterpolation.swift; path = GRDB/Core/SQLInterpolation.swift; sourceTree = "<group>"; };
+		5D3F363937D3AD14FF93CF48AD895C10 /* OHMySQL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OHMySQL.debug.xcconfig; sourceTree = "<group>"; };
+		5DEA04D5B7CB9AEAB0FEB0101F5A02DF /* TableRecord+Association.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableRecord+Association.swift"; path = "GRDB/QueryInterface/TableRecord+Association.swift"; sourceTree = "<group>"; };
+		5DEE650E951FF6F9DEFBD92F69703CE5 /* DatabasePublishers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabasePublishers.swift; path = GRDB/Core/DatabasePublishers.swift; sourceTree = "<group>"; };
+		5E74F985748B3670721990CA49274247 /* JoinAssociation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JoinAssociation.swift; path = GRDB/QueryInterface/Request/Association/JoinAssociation.swift; sourceTree = "<group>"; };
+		5FC082F4379DCF902B4A2DD186B84921 /* WALSnapshotTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WALSnapshotTransaction.swift; path = GRDB/Core/WALSnapshotTransaction.swift; sourceTree = "<group>"; };
+		630AD5196B4835BCE0D0DC11DE97686E /* DatabaseValueConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseValueConvertible.swift; path = GRDB/Core/DatabaseValueConvertible.swift; sourceTree = "<group>"; };
+		65A477B024C7860344D36CF967950ED8 /* ValueObservation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValueObservation.swift; path = GRDB/ValueObservation/ValueObservation.swift; sourceTree = "<group>"; };
+		66371364E47C7229CEEA0BB90772A1EB /* SQLForeignKeyRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLForeignKeyRequest.swift; path = GRDB/QueryInterface/SQL/SQLForeignKeyRequest.swift; sourceTree = "<group>"; };
+		691DD54D311816849AB30DAB2A30AAEB /* Pods-AttendanceReportManagementApplication-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AttendanceReportManagementApplication-Info.plist"; sourceTree = "<group>"; };
+		6B74B62718B07B415438F3EF14158704 /* OHMySQLQueryTimeline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLQueryTimeline.h; path = OHMySQL/Sources/Models/OHMySQLQueryTimeline.h; sourceTree = "<group>"; };
+		6C06441E869CA5DA136F2F7D50ED9267 /* OHMySQLStoreCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLStoreCoordinator.h; path = OHMySQL/Sources/OHMySQLStoreCoordinator.h; sourceTree = "<group>"; };
+		6D16873CE8C84AD6E7C6818BE8ED6BF9 /* VirtualTableModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VirtualTableModule.swift; path = GRDB/QueryInterface/Schema/VirtualTableModule.swift; sourceTree = "<group>"; };
+		6DFAC0AC09F4F682430C400379B7E587 /* OHMySQL */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OHMySQL; path = OHMySQL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E12223547139071B9C339C220392CB5 /* HasManyThroughAssociation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HasManyThroughAssociation.swift; path = GRDB/QueryInterface/Request/Association/HasManyThroughAssociation.swift; sourceTree = "<group>"; };
+		6FC31A6723E625A116B88C92F5C968E4 /* OHMySQLConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLConfiguration.m; path = OHMySQL/Sources/Models/OHMySQLConfiguration.m; sourceTree = "<group>"; };
+		705AAA61330411627D58328CFCFC7205 /* Pods-AttendanceReportManagementApplication-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AttendanceReportManagementApplication-umbrella.h"; sourceTree = "<group>"; };
+		70714CF71D4EDE43B788676BDE589B6A /* DatabasePromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabasePromise.swift; path = GRDB/QueryInterface/SQL/DatabasePromise.swift; sourceTree = "<group>"; };
+		7283CCDAB5F3B65788B7188F808B2CF9 /* ButtonOnKeyboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ButtonOnKeyboard-dummy.m"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		73BA35F1855DAA9EB08C30527B045156 /* FetchableRecord+TableRecord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FetchableRecord+TableRecord.swift"; path = "GRDB/Record/FetchableRecord+TableRecord.swift"; sourceTree = "<group>"; };
+		740253AD022F2267E80F68400DA8F583 /* OHSSLConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHSSLConfig.m; path = OHMySQL/Sources/Models/OHSSLConfig.m; sourceTree = "<group>"; };
+		749210F115432B7F72BB489827A543CF /* Date.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Date.swift; path = GRDB/Core/Support/Foundation/Date.swift; sourceTree = "<group>"; };
+		764C1A826800FB51133ADCBFEFAD3351 /* OHMySQLMappingProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLMappingProtocol.h; path = OHMySQL/Sources/OHMySQLMappingProtocol.h; sourceTree = "<group>"; };
+		7803A260FE252DB3F37A9C607716212D /* SQLExpression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLExpression.swift; path = GRDB/QueryInterface/SQL/SQLExpression.swift; sourceTree = "<group>"; };
+		781A8032C30E2270E51C9F2897975585 /* OHMySQLQueryRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLQueryRequest.h; path = OHMySQL/Sources/Models/OHMySQLQueryRequest.h; sourceTree = "<group>"; };
+		7878F35E5B03B9AB3989F4E111640B67 /* OnDemandFuture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnDemandFuture.swift; path = GRDB/Utils/OnDemandFuture.swift; sourceTree = "<group>"; };
+		7AFCC7DE19B2DA4639A6D5980190B9A0 /* SerializedDatabase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SerializedDatabase.swift; path = GRDB/Core/SerializedDatabase.swift; sourceTree = "<group>"; };
+		7C22FD4FEBE7B5D36F0B7670AFAA2F21 /* DatabaseWriter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseWriter.swift; path = GRDB/Core/DatabaseWriter.swift; sourceTree = "<group>"; };
+		7EF3D929D618B54762CA7A17599E437F /* StandardLibrary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StandardLibrary.swift; path = GRDB/Core/Support/StandardLibrary/StandardLibrary.swift; sourceTree = "<group>"; };
+		829A793D9EC7728731EC1AC386AE73CE /* CommonTableExpression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommonTableExpression.swift; path = GRDB/QueryInterface/Request/CommonTableExpression.swift; sourceTree = "<group>"; };
+		82AFC359C039D8D4E7BC931408A09610 /* OHMySQLQueryContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLQueryContext.m; path = OHMySQL/Sources/OHMySQLQueryContext.m; sourceTree = "<group>"; };
+		832534C46DBF1FD148CFEE09891692D6 /* DatabasePool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabasePool.swift; path = GRDB/Core/DatabasePool.swift; sourceTree = "<group>"; };
+		84AA15DAC40FE8978B3B2BABF0C4A2BD /* EncodableRecord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EncodableRecord.swift; path = GRDB/Record/EncodableRecord.swift; sourceTree = "<group>"; };
+		853C931EECB3E3A201218F5B62795665 /* SQLOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLOperators.swift; path = GRDB/QueryInterface/SQL/SQLOperators.swift; sourceTree = "<group>"; };
+		87D8128B05C5CC52476DF85CC0193B79 /* Inflections.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Inflections.swift; path = GRDB/Utils/Inflections.swift; sourceTree = "<group>"; };
+		8890AD98A3D589BE21E66856FAD678B4 /* OHMySQLQueryContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLQueryContext.h; path = OHMySQL/Sources/OHMySQLQueryContext.h; sourceTree = "<group>"; };
+		899889AF92E00A5457197FCE3F3E9C37 /* DatabaseValueConvertible+Encodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DatabaseValueConvertible+Encodable.swift"; path = "GRDB/Core/Support/StandardLibrary/DatabaseValueConvertible+Encodable.swift"; sourceTree = "<group>"; };
+		8B60632EC4EA80BB03455B0BC040DAB9 /* OHMySQLStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLStore.h; path = OHMySQL/Sources/Models/OHMySQLStore.h; sourceTree = "<group>"; };
+		8BD8F5CF39C9609AB9E0FBCFD7481C3D /* GrowingTextView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GrowingTextView-dummy.m"; sourceTree = "<group>"; };
+		8BDD3BE4255C8201BF9929E2721E13F4 /* GrowingTextView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GrowingTextView.modulemap; sourceTree = "<group>"; };
+		8C53B88D9F761353EAFE11FC3BDECFC3 /* Pods-AttendanceReportManagementApplication */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AttendanceReportManagementApplication"; path = Pods_AttendanceReportManagementApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D2E84EBD718886922E61B4808451229 /* OHMySQLSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLSerialization.h; path = OHMySQL/Sources/OHMySQLSerialization.h; sourceTree = "<group>"; };
+		8DA36B7CB3AB5FC19607F11572219C87 /* ButtonOnKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ButtonOnKeyboard.release.xcconfig; sourceTree = "<group>"; };
+		8DA976CA96FE4773CC3923E78318410A /* CaseInsensitiveIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaseInsensitiveIdentifier.swift; path = GRDB/Utils/CaseInsensitiveIdentifier.swift; sourceTree = "<group>"; };
+		8E8B9E9991146409E601727E3E3C4B44 /* SQLFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLFunctions.swift; path = GRDB/QueryInterface/SQL/SQLFunctions.swift; sourceTree = "<group>"; };
+		8ECC1D3F2AAB257E03D8EB27F7C59CB7 /* Database.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Database.swift; path = GRDB/Core/Database.swift; sourceTree = "<group>"; };
+		8FB6685774EFABBFEC55AEC3FBBC4E06 /* OHMySQLContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLContainer.h; path = OHMySQL/Sources/OHMySQLContainer.h; sourceTree = "<group>"; };
+		906D52353673070108E5851CA70DB320 /* LockedBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LockedBox.swift; path = GRDB/Utils/LockedBox.swift; sourceTree = "<group>"; };
+		912DA62286327FFEC0AFBF5ED28B6D9C /* ButtonOnKeyboard-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ButtonOnKeyboard-Info.plist"; sourceTree = "<group>"; };
+		937C0CB6642A38B055C49F62A19C85C9 /* OHResultErrorType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHResultErrorType.m; path = OHMySQL/Sources/Constants/OHResultErrorType.m; sourceTree = "<group>"; };
+		9437AE412311AC5E5ED7C609F78F9E8D /* Decimal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decimal.swift; path = GRDB/Core/Support/Foundation/Decimal.swift; sourceTree = "<group>"; };
+		95A4897C0A4FEE61FF1F588589440032 /* Record.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Record.swift; path = GRDB/Record/Record.swift; sourceTree = "<group>"; };
+		9663794C13B03219994130327DB275CD /* MutablePersistableRecord+Insert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MutablePersistableRecord+Insert.swift"; path = "GRDB/Record/MutablePersistableRecord+Insert.swift"; sourceTree = "<group>"; };
+		96F1FF187ACC090811AFF7FDC5277529 /* Pods-AttendanceReportManagementApplication.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AttendanceReportManagementApplication.modulemap"; sourceTree = "<group>"; };
+		998F481D51C1266CC8C1695EFFF53844 /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = GRDB/ValueObservation/Reducers/Map.swift; sourceTree = "<group>"; };
+		9A005719C69C17F5B7AFACEA98776201 /* UUID.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UUID.swift; path = GRDB/Core/Support/Foundation/UUID.swift; sourceTree = "<group>"; };
+		9A6406A2CE8E1643FF0F77F059FD3E52 /* NSData+OHSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+OHSerialization.h"; path = "OHMySQL/Sources/Categories/NSData+OHSerialization.h"; sourceTree = "<group>"; };
+		9B6B4C98E57FB66A454D9AE74EC17A3C /* NSData+OHSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+OHSerialization.m"; path = "OHMySQL/Sources/Categories/NSData+OHSerialization.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EC6B0FE5381715DFCFB0C0B15C5CC1F /* DatabaseFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseFunction.swift; path = GRDB/Core/DatabaseFunction.swift; sourceTree = "<group>"; };
+		9EDB5DDCB73AD9753EB140A67677A619 /* MutablePersistableRecord+Update.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MutablePersistableRecord+Update.swift"; path = "GRDB/Record/MutablePersistableRecord+Update.swift"; sourceTree = "<group>"; };
+		9F341FA5B67E0E5CC3BE717C8C4DA4B6 /* Migration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Migration.swift; path = GRDB/Migration/Migration.swift; sourceTree = "<group>"; };
+		A3FA27737C7923959442793BCEED134E /* MySQL.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = MySQL.xcframework; path = OHMySQL/lib/MySQL.xcframework; sourceTree = "<group>"; };
+		A735A8E0BE694615D227C6B2D809953D /* Fetch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fetch.swift; path = GRDB/ValueObservation/Reducers/Fetch.swift; sourceTree = "<group>"; };
+		A7B99A17966EACF7D7ACACEAD1392A68 /* DatabaseRegion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseRegion.swift; path = GRDB/Core/DatabaseRegion.swift; sourceTree = "<group>"; };
+		A7E60EAAB59D076E5F6AC5CDAADFFF8F /* NSNumber+OHSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+OHSerialization.h"; path = "OHMySQL/Sources/Categories/NSNumber+OHSerialization.h"; sourceTree = "<group>"; };
+		A7E828796B39368E031180E15B6CBD02 /* OHMySQLSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLSerialization.m; path = OHMySQL/Sources/OHMySQLSerialization.m; sourceTree = "<group>"; };
+		A7F3E7A561506ABD9328D23AAF6C78BD /* FetchableRecord+Decodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FetchableRecord+Decodable.swift"; path = "GRDB/Record/FetchableRecord+Decodable.swift"; sourceTree = "<group>"; };
+		A86CA382E5B7A0118AE41F0008EBD592 /* JSONRequiredEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONRequiredEncoder.swift; path = GRDB/Core/Support/StandardLibrary/JSONRequiredEncoder.swift; sourceTree = "<group>"; };
+		AB5A1E7C6599E8D289F4FD60A3DE495F /* OHProtocolType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHProtocolType.h; path = OHMySQL/Sources/Constants/OHProtocolType.h; sourceTree = "<group>"; };
+		AB711D7D317040382C96506A7B4202E3 /* OHMySQLQueryRequestFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLQueryRequestFactory.h; path = OHMySQL/Sources/OHMySQLQueryRequestFactory.h; sourceTree = "<group>"; };
+		AB7A839E137F78897697B53BC355BB8C /* FTS5Tokenizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5Tokenizer.swift; path = GRDB/FTS/FTS5Tokenizer.swift; sourceTree = "<group>"; };
+		AC039E247D488043AD55DE0E14D1788B /* Database+Statements.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Database+Statements.swift"; path = "GRDB/Core/Database+Statements.swift"; sourceTree = "<group>"; };
+		AEB359910ECEB1FD75C6CAE9CFF626E0 /* OHMySQLQueryRequestFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLQueryRequestFactory.m; path = OHMySQL/Sources/OHMySQLQueryRequestFactory.m; sourceTree = "<group>"; };
+		AEC67F036D7F2572FF7AB4517C0CE91F /* FTS5CustomTokenizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5CustomTokenizer.swift; path = GRDB/FTS/FTS5CustomTokenizer.swift; sourceTree = "<group>"; };
+		AEC887AC65B139FC3D3E3E2456C14B1E /* OHMySQLConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHMySQLConfiguration.h; path = OHMySQL/Sources/Models/OHMySQLConfiguration.h; sourceTree = "<group>"; };
+		AEE1592AFD5562E9526E259BCFD09049 /* OHMySQL-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "OHMySQL-xcframeworks.sh"; sourceTree = "<group>"; };
+		AEFB924B80ED9963C2A00B865EE1249A /* SchedulingWatchdog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SchedulingWatchdog.swift; path = GRDB/Core/SchedulingWatchdog.swift; sourceTree = "<group>"; };
+		B00FAE366CBA98ED32A9075E85BD24CA /* Export.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Export.swift; path = GRDB/Export.swift; sourceTree = "<group>"; };
+		B087937D2F7387686436ED410E168520 /* MutablePersistableRecord+Delete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MutablePersistableRecord+Delete.swift"; path = "GRDB/Record/MutablePersistableRecord+Delete.swift"; sourceTree = "<group>"; };
+		B10817E65EBAAB5E3323C0964003D0DE /* DatabaseValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseValue.swift; path = GRDB/Core/DatabaseValue.swift; sourceTree = "<group>"; };
+		B158559394B801F8EEF9E5C19EA79A93 /* Fixits.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fixits.swift; path = GRDB/Fixits.swift; sourceTree = "<group>"; };
+		B1FBEE81574E6A98DD6934AE2CC4F114 /* NSData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSData.swift; path = GRDB/Core/Support/Foundation/NSData.swift; sourceTree = "<group>"; };
+		B23B32E71C4FD6709B76D5D81806FCDC /* ValueObservationScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValueObservationScheduler.swift; path = GRDB/ValueObservation/ValueObservationScheduler.swift; sourceTree = "<group>"; };
+		B2899E5FF305A757DC68ED7D9D5B9E00 /* SQLOrdering.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLOrdering.swift; path = GRDB/QueryInterface/SQL/SQLOrdering.swift; sourceTree = "<group>"; };
+		B4978C67A0A717CF8EA08FBD75BEEB35 /* OHJoinConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OHJoinConstants.h; path = OHMySQL/Sources/Constants/OHJoinConstants.h; sourceTree = "<group>"; };
+		B4C61787034108B49D0C45A1DED8EAD3 /* GrowingTextView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GrowingTextView.debug.xcconfig; sourceTree = "<group>"; };
+		B67E99AE113219BCD72BDD97F4C231D5 /* DatabaseCollation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseCollation.swift; path = GRDB/Core/DatabaseCollation.swift; sourceTree = "<group>"; };
+		B70A4D96EA764A27C7D62D0CB3AC14B3 /* ButtonOnKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ButtonOnKeyboard.debug.xcconfig; sourceTree = "<group>"; };
+		B9C2897895E9B3BCCE6A203CDE8B37EF /* MutablePersistableRecord+Upsert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MutablePersistableRecord+Upsert.swift"; path = "GRDB/Record/MutablePersistableRecord+Upsert.swift"; sourceTree = "<group>"; };
+		BA0819C757DB47AE0C9E9B05AF394510 /* GRDB.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GRDB.swift.modulemap; sourceTree = "<group>"; };
+		BC22CE3510238DB64E481271782DA5A1 /* PersistableRecord+Save.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PersistableRecord+Save.swift"; path = "GRDB/Record/PersistableRecord+Save.swift"; sourceTree = "<group>"; };
+		BCE793517D575CD5EF0DCD12A66FC5B0 /* DatabaseSnapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseSnapshot.swift; path = GRDB/Core/DatabaseSnapshot.swift; sourceTree = "<group>"; };
+		BEAEE237D4A8992EB5FEC196BB348F35 /* TableDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableDefinition.swift; path = GRDB/QueryInterface/Schema/TableDefinition.swift; sourceTree = "<group>"; };
+		BF95AF4106482EF7C5E47C53711533E1 /* OHMySQL-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHMySQL-prefix.pch"; sourceTree = "<group>"; };
+		C04E1B6DD11F636D98B3D8E3ECE0572F /* SQLRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLRequest.swift; path = GRDB/Core/SQLRequest.swift; sourceTree = "<group>"; };
+		C247CE998573C6D508033A58F69A2DEB /* Cursor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cursor.swift; path = GRDB/Core/Cursor.swift; sourceTree = "<group>"; };
+		C29E87A49590F60D4DC34479369D20DB /* RequestProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestProtocols.swift; path = GRDB/QueryInterface/Request/RequestProtocols.swift; sourceTree = "<group>"; };
+		C4371A58B97DB667F310DC36594378ED /* FTS3Pattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS3Pattern.swift; path = GRDB/FTS/FTS3Pattern.swift; sourceTree = "<group>"; };
+		C5A3FA5C595300C41D3EEDDC62BA5346 /* Row.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Row.swift; path = GRDB/Core/Row.swift; sourceTree = "<group>"; };
+		C785F2E2179D264D1754A1AEE21BE366 /* SQL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQL.swift; path = GRDB/Core/SQL.swift; sourceTree = "<group>"; };
+		CAD665A455BA4D29815BEAD8C5C68FD3 /* DatabaseSchemaCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseSchemaCache.swift; path = GRDB/Core/DatabaseSchemaCache.swift; sourceTree = "<group>"; };
+		CBFD5966EE5F10BC425D3C1D117125F7 /* OHMySQLContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLContainer.m; path = OHMySQL/Sources/OHMySQLContainer.m; sourceTree = "<group>"; };
+		CDFE38DD8FF74C10450141EC3949480E /* SQLCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLCollection.swift; path = GRDB/QueryInterface/SQL/SQLCollection.swift; sourceTree = "<group>"; };
+		D1C13898C1FD5D6590EBD6EB5F5802BC /* CharsetEncoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CharsetEncoding.h; path = OHMySQL/Sources/Constants/CharsetEncoding.h; sourceTree = "<group>"; };
+		D3055D58B7C923D0F5381E531870AD2B /* DatabaseReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseReader.swift; path = GRDB/Core/DatabaseReader.swift; sourceTree = "<group>"; };
+		D45A784599A4ACFC9424DCF6EE1D8526 /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = GRDB/Core/Statement.swift; sourceTree = "<group>"; };
+		D5565006903EE1A388E9CA8232009F70 /* StatementColumnConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatementColumnConvertible.swift; path = GRDB/Core/StatementColumnConvertible.swift; sourceTree = "<group>"; };
+		D67AF82C442E22AB62F5DA9DC06AE0FE /* ForeignKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ForeignKey.swift; path = GRDB/QueryInterface/ForeignKey.swift; sourceTree = "<group>"; };
+		D6FE73F45119C48E9F24719E5250FD08 /* MutablePersistableRecord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutablePersistableRecord.swift; path = GRDB/Record/MutablePersistableRecord.swift; sourceTree = "<group>"; };
+		D8CB0DC5FB95D9B3F30419989A462FF4 /* MutablePersistableRecord+Save.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MutablePersistableRecord+Save.swift"; path = "GRDB/Record/MutablePersistableRecord+Save.swift"; sourceTree = "<group>"; };
+		D96F0BE6642570E2755BE0874A3911EF /* PersistableRecord+Upsert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PersistableRecord+Upsert.swift"; path = "GRDB/Record/PersistableRecord+Upsert.swift"; sourceTree = "<group>"; };
+		D997389A50A02458619CBEC67757D1AF /* ButtonOnKeyboard */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ButtonOnKeyboard; path = ButtonOnKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9EDC4AC08661D33F380238A77822220 /* DatabaseCancellable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseCancellable.swift; path = GRDB/ValueObservation/DatabaseCancellable.swift; sourceTree = "<group>"; };
+		DB8174A6A20379BA3A4101BBABE5F867 /* URL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URL.swift; path = GRDB/Core/Support/Foundation/URL.swift; sourceTree = "<group>"; };
+		DC68F9210841881E134B02FE01D6C427 /* SQLSubquery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLSubquery.swift; path = GRDB/QueryInterface/SQL/SQLSubquery.swift; sourceTree = "<group>"; };
+		DD742E2B7FDA447F4E5376AEF91E4113 /* OHMySQLStoreCoordinator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLStoreCoordinator.m; path = OHMySQL/Sources/OHMySQLStoreCoordinator.m; sourceTree = "<group>"; };
+		E135A5CDD23B90EB699DE59DCF5AD091 /* PersistableRecord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PersistableRecord.swift; path = GRDB/Record/PersistableRecord.swift; sourceTree = "<group>"; };
+		E18D26D89FDAD2B99D7DCE8E329CCD39 /* ButtonOnKeyboard-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ButtonOnKeyboard-prefix.pch"; sourceTree = "<group>"; };
+		E1BE7A43A804CCD2E936975938285D70 /* Pool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pool.swift; path = GRDB/Utils/Pool.swift; sourceTree = "<group>"; };
+		E1DCD50BA0F7B47706C3FE9A70E38D2D /* Table.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Table.swift; path = GRDB/QueryInterface/SQL/Table.swift; sourceTree = "<group>"; };
+		E22CDF2096B6F220F6403BC03B3A8B2B /* OHMySQL.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OHMySQL.modulemap; sourceTree = "<group>"; };
+		E2D2961998AA8AED92B4AD9B88B7B87C /* GRDB.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GRDB.swift-dummy.m"; sourceTree = "<group>"; };
+		E4E39D393367EC822B25FC1BAD587A35 /* FTS5TokenizerDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5TokenizerDescriptor.swift; path = GRDB/FTS/FTS5TokenizerDescriptor.swift; sourceTree = "<group>"; };
+		E66AC32D35BF8255216843B187E4E815 /* TransactionObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransactionObserver.swift; path = GRDB/Core/TransactionObserver.swift; sourceTree = "<group>"; };
+		E7F0E4C89B442E567C80CB9086AB6D6B /* NSString+Utility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Utility.h"; path = "OHMySQL/Sources/Categories/NSString+Utility.h"; sourceTree = "<group>"; };
+		E838B9F6F8E23C4A25667E612AF1C4B8 /* NSObject+Mapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Mapping.m"; path = "OHMySQL/Sources/Categories/NSObject+Mapping.m"; sourceTree = "<group>"; };
+		E84FE60340533A5F0CBCE19800C74D55 /* QueryInterfaceRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QueryInterfaceRequest.swift; path = GRDB/QueryInterface/Request/QueryInterfaceRequest.swift; sourceTree = "<group>"; };
+		E879B2042840F2AF04B5D50F63149CA5 /* BelongsToAssociation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BelongsToAssociation.swift; path = GRDB/QueryInterface/Request/Association/BelongsToAssociation.swift; sourceTree = "<group>"; };
+		EC404119D8F44BFB4885E45AF0FCBD3A /* SQLSelection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLSelection.swift; path = GRDB/QueryInterface/SQL/SQLSelection.swift; sourceTree = "<group>"; };
+		EC5BE2FF832ACFB36D5BD8D6E3573A89 /* OHMySQLStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLStore.m; path = OHMySQL/Sources/Models/OHMySQLStore.m; sourceTree = "<group>"; };
+		ED4FFB296C7AE38E68E1FE50739DBA65 /* DatabaseDateComponents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseDateComponents.swift; path = GRDB/Core/Support/Foundation/DatabaseDateComponents.swift; sourceTree = "<group>"; };
+		EE0252C8F8405C558EC88DF4807144D0 /* DatabaseValueConvertible+ReferenceConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DatabaseValueConvertible+ReferenceConvertible.swift"; path = "GRDB/Core/Support/Foundation/DatabaseValueConvertible+ReferenceConvertible.swift"; sourceTree = "<group>"; };
+		EE6DD8FC166ED967B4261137B1A50A96 /* GrowingTextView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GrowingTextView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE98B355A131C1AF6AAA1987E656FFCA /* grdb_config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = grdb_config.h; path = Support/grdb_config.h; sourceTree = "<group>"; };
+		EF4E84CA8381B1D6EF5EECA8BF02A7D2 /* HasOneThroughAssociation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HasOneThroughAssociation.swift; path = GRDB/QueryInterface/Request/Association/HasOneThroughAssociation.swift; sourceTree = "<group>"; };
+		EF7486852148CBE7FCDA0A296883C19D /* DatabaseMigrator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseMigrator.swift; path = GRDB/Migration/DatabaseMigrator.swift; sourceTree = "<group>"; };
+		F03A71A5FF385A15D11E456313632CE4 /* NSString+Escaping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Escaping.m"; path = "OHMySQL/Sources/Categories/NSString+Escaping.m"; sourceTree = "<group>"; };
+		F1799409723FBC9F7EB087AD75DECFDD /* OHMySQL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OHMySQL.release.xcconfig; sourceTree = "<group>"; };
+		F1ACCAB9653E42A632973FEF90CD5DB6 /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = GRDB/FTS/FTS5.swift; sourceTree = "<group>"; };
+		F1FF94D3B745FF9946F6A8FB9A06EF19 /* ButtonOnKeyboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonOnKeyboard.swift; path = ButtonOnKeyboard/Classes/ButtonOnKeyboard.swift; sourceTree = "<group>"; };
+		F32346873688687C4E40ABB55C9BEFED /* ReadWriteBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReadWriteBox.swift; path = GRDB/Utils/ReadWriteBox.swift; sourceTree = "<group>"; };
+		F742887C1E2E489ABCA0EC25654B6DF1 /* Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Data.swift; path = GRDB/Core/Support/Foundation/Data.swift; sourceTree = "<group>"; };
+		F7C5C907152CE0872F06558F1CF7ED2F /* AssociationAggregate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssociationAggregate.swift; path = GRDB/QueryInterface/Request/Association/AssociationAggregate.swift; sourceTree = "<group>"; };
+		F981D69998B84D0696602F3744C2DA28 /* CGFloat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGFloat.swift; path = GRDB/Core/Support/CoreGraphics/CGFloat.swift; sourceTree = "<group>"; };
+		FA07E8B94D300CA223B26BF1819400C6 /* OHMySQLQueryRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OHMySQLQueryRequest.m; path = OHMySQL/Sources/Models/OHMySQLQueryRequest.m; sourceTree = "<group>"; };
+		FA478A9483AB9C432BA7377B8C602431 /* NSNumber+OHSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+OHSerialization.m"; path = "OHMySQL/Sources/Categories/NSNumber+OHSerialization.m"; sourceTree = "<group>"; };
+		FB52DD151C276F690ACDDA6EC67837E9 /* TableRecord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableRecord.swift; path = GRDB/Record/TableRecord.swift; sourceTree = "<group>"; };
+		FB59DB93CEA25FD67DF62C32ADC75842 /* FetchableRecord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FetchableRecord.swift; path = GRDB/Record/FetchableRecord.swift; sourceTree = "<group>"; };
+		FF353604013A0851FF2BC3164510691E /* GrowingTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GrowingTextView.swift; path = Sources/GrowingTextView/GrowingTextView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7DD2ECED4023FF863E3E6BCCDE83EDE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EE47A8ECD8C123E571B68F5B1ACEFDF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94934049D9EED973CEE5DF0DED27A9A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE9A3E109515B5F7AC594805A15639FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E506ABA92A75FD48FFAF976505683414 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D352848063A939FC2DB925F12E7C4818 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED99F065281192790331C0534DB74814 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8BA858B937DDBE3B795485572011F67 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3421E458C1EBF33147CB85E683133F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DE11B092EC25B46D44583CED7AAB175 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B8994020D6D5A27FA46B38776952A8A /* standard */ = {
+			isa = PBXGroup;
+			children = (
+				2D3D728DDC373DDBA91EA2B927D489F1 /* Association.swift */,
+				F7C5C907152CE0872F06558F1CF7ED2F /* AssociationAggregate.swift */,
+				E879B2042840F2AF04B5D50F63149CA5 /* BelongsToAssociation.swift */,
+				8DA976CA96FE4773CC3923E78318410A /* CaseInsensitiveIdentifier.swift */,
+				F981D69998B84D0696602F3744C2DA28 /* CGFloat.swift */,
+				3F6243751DD851010F23F7FC5B181E19 /* Column.swift */,
+				829A793D9EC7728731EC1AC386AE73CE /* CommonTableExpression.swift */,
+				048F9E1BDB65D4DC500D31381F40082F /* Configuration.swift */,
+				C247CE998573C6D508033A58F69A2DEB /* Cursor.swift */,
+				F742887C1E2E489ABCA0EC25654B6DF1 /* Data.swift */,
+				8ECC1D3F2AAB257E03D8EB27F7C59CB7 /* Database.swift */,
+				106115B392BCDF8E2E6A171DE805A825 /* Database+Schema.swift */,
+				AC039E247D488043AD55DE0E14D1788B /* Database+Statements.swift */,
+				3A9C309EDA2A3D471325B7CACEE6D08C /* DatabaseBackupProgress.swift */,
+				D9EDC4AC08661D33F380238A77822220 /* DatabaseCancellable.swift */,
+				B67E99AE113219BCD72BDD97F4C231D5 /* DatabaseCollation.swift */,
+				ED4FFB296C7AE38E68E1FE50739DBA65 /* DatabaseDateComponents.swift */,
+				4DFC18978386D6944680D88AA06FD21D /* DatabaseError.swift */,
+				9EC6B0FE5381715DFCFB0C0B15C5CC1F /* DatabaseFunction.swift */,
+				EF7486852148CBE7FCDA0A296883C19D /* DatabaseMigrator.swift */,
+				832534C46DBF1FD148CFEE09891692D6 /* DatabasePool.swift */,
+				70714CF71D4EDE43B788676BDE589B6A /* DatabasePromise.swift */,
+				5DEE650E951FF6F9DEFBD92F69703CE5 /* DatabasePublishers.swift */,
+				4D411CAC9EE6712AC598C0D263FA9780 /* DatabaseQueue.swift */,
+				D3055D58B7C923D0F5381E531870AD2B /* DatabaseReader.swift */,
+				A7B99A17966EACF7D7ACACEAD1392A68 /* DatabaseRegion.swift */,
+				0144F6CE4EF991BBE793BD361A21E900 /* DatabaseRegionObservation.swift */,
+				CAD665A455BA4D29815BEAD8C5C68FD3 /* DatabaseSchemaCache.swift */,
+				BCE793517D575CD5EF0DCD12A66FC5B0 /* DatabaseSnapshot.swift */,
+				1E55138882A3C0E27437CD223F66F2B8 /* DatabaseSnapshotPool.swift */,
+				B10817E65EBAAB5E3323C0964003D0DE /* DatabaseValue.swift */,
+				630AD5196B4835BCE0D0DC11DE97686E /* DatabaseValueConvertible.swift */,
+				2A4BE4329A0B059EC4E4238661A1EFC7 /* DatabaseValueConvertible+Decodable.swift */,
+				899889AF92E00A5457197FCE3F3E9C37 /* DatabaseValueConvertible+Encodable.swift */,
+				300B3B5B3E4920FCC8D8DFD4F080C176 /* DatabaseValueConvertible+RawRepresentable.swift */,
+				EE0252C8F8405C558EC88DF4807144D0 /* DatabaseValueConvertible+ReferenceConvertible.swift */,
+				7C22FD4FEBE7B5D36F0B7670AFAA2F21 /* DatabaseWriter.swift */,
+				749210F115432B7F72BB489827A543CF /* Date.swift */,
+				9437AE412311AC5E5ED7C609F78F9E8D /* Decimal.swift */,
+				84AA15DAC40FE8978B3B2BABF0C4A2BD /* EncodableRecord.swift */,
+				03DC6D7540788F80C05562FD049CD39A /* EncodableRecord+Encodable.swift */,
+				B00FAE366CBA98ED32A9075E85BD24CA /* Export.swift */,
+				A735A8E0BE694615D227C6B2D809953D /* Fetch.swift */,
+				FB59DB93CEA25FD67DF62C32ADC75842 /* FetchableRecord.swift */,
+				A7F3E7A561506ABD9328D23AAF6C78BD /* FetchableRecord+Decodable.swift */,
+				73BA35F1855DAA9EB08C30527B045156 /* FetchableRecord+TableRecord.swift */,
+				182575072952B9A0B6F33889CBD8169C /* FetchRequest.swift */,
+				B158559394B801F8EEF9E5C19EA79A93 /* Fixits.swift */,
+				D67AF82C442E22AB62F5DA9DC06AE0FE /* ForeignKey.swift */,
+				2D2297E642130C24DBCA9D8C5862109C /* FTS3.swift */,
+				21A2A5C2FD2815C35643E651241DE54F /* FTS3+QueryInterface.swift */,
+				C4371A58B97DB667F310DC36594378ED /* FTS3Pattern.swift */,
+				2864F5ACF96CC1A2441A35568A189A95 /* FTS3TokenizerDescriptor.swift */,
+				0869F7C4E492ACD67090410F37C36D65 /* FTS4.swift */,
+				F1ACCAB9653E42A632973FEF90CD5DB6 /* FTS5.swift */,
+				037209FDCF3EE285036F2388A15CB462 /* FTS5+QueryInterface.swift */,
+				AEC67F036D7F2572FF7AB4517C0CE91F /* FTS5CustomTokenizer.swift */,
+				4DFAF289C714C4EC186D0369F0D9DCFD /* FTS5Pattern.swift */,
+				AB7A839E137F78897697B53BC355BB8C /* FTS5Tokenizer.swift */,
+				E4E39D393367EC822B25FC1BAD587A35 /* FTS5TokenizerDescriptor.swift */,
+				599246687B6A827E36B211E2F196F9A6 /* FTS5WrapperTokenizer.swift */,
+				EE98B355A131C1AF6AAA1987E656FFCA /* grdb_config.h */,
+				207560C0B9ADCEE32606AD5598CD37E2 /* HasManyAssociation.swift */,
+				6E12223547139071B9C339C220392CB5 /* HasManyThroughAssociation.swift */,
+				201DE59E6B5AB5AEC1524F2ECE957BA2 /* HasOneAssociation.swift */,
+				EF4E84CA8381B1D6EF5EECA8BF02A7D2 /* HasOneThroughAssociation.swift */,
+				87D8128B05C5CC52476DF85CC0193B79 /* Inflections.swift */,
+				13ED4F0FE65C31B6C270E88C384F5E0C /* Inflections+English.swift */,
+				5E74F985748B3670721990CA49274247 /* JoinAssociation.swift */,
+				A86CA382E5B7A0118AE41F0008EBD592 /* JSONRequiredEncoder.swift */,
+				906D52353673070108E5851CA70DB320 /* LockedBox.swift */,
+				998F481D51C1266CC8C1695EFFF53844 /* Map.swift */,
+				9F341FA5B67E0E5CC3BE717C8C4DA4B6 /* Migration.swift */,
+				D6FE73F45119C48E9F24719E5250FD08 /* MutablePersistableRecord.swift */,
+				0E8ABA9A2B0942EB70AFC5DE9E243CAF /* MutablePersistableRecord+DAO.swift */,
+				B087937D2F7387686436ED410E168520 /* MutablePersistableRecord+Delete.swift */,
+				9663794C13B03219994130327DB275CD /* MutablePersistableRecord+Insert.swift */,
+				D8CB0DC5FB95D9B3F30419989A462FF4 /* MutablePersistableRecord+Save.swift */,
+				9EDB5DDCB73AD9753EB140A67677A619 /* MutablePersistableRecord+Update.swift */,
+				B9C2897895E9B3BCCE6A203CDE8B37EF /* MutablePersistableRecord+Upsert.swift */,
+				B1FBEE81574E6A98DD6934AE2CC4F114 /* NSData.swift */,
+				186433DBC88F344405FD11775E2DBD85 /* NSNull.swift */,
+				575E493EF2E73E4C503AE0D6B2408CED /* NSNumber.swift */,
+				17F6049CD7B305CB3BC6473233F8F064 /* NSString.swift */,
+				7878F35E5B03B9AB3989F4E111640B67 /* OnDemandFuture.swift */,
+				0490325984D78875A5995C6CFC3BFBE1 /* Optional.swift */,
+				5C83A2DBC51A3493168960CA15206F83 /* OrderedDictionary.swift */,
+				E135A5CDD23B90EB699DE59DCF5AD091 /* PersistableRecord.swift */,
+				31F8E6023D1303FAEBC9C015B542E221 /* PersistableRecord+Insert.swift */,
+				BC22CE3510238DB64E481271782DA5A1 /* PersistableRecord+Save.swift */,
+				D96F0BE6642570E2755BE0874A3911EF /* PersistableRecord+Upsert.swift */,
+				E1BE7A43A804CCD2E936975938285D70 /* Pool.swift */,
+				E84FE60340533A5F0CBCE19800C74D55 /* QueryInterfaceRequest.swift */,
+				F32346873688687C4E40ABB55C9BEFED /* ReadWriteBox.swift */,
+				4BCD9C895B25D1FC88C69018FBE9DE78 /* ReceiveValuesOn.swift */,
+				95A4897C0A4FEE61FF1F588589440032 /* Record.swift */,
+				58DA3E60C2331B31A88821B657011231 /* Refinable.swift */,
+				0908CBB0A8B25B2F9632A9D135984898 /* RemoveDuplicates.swift */,
+				C29E87A49590F60D4DC34479369D20DB /* RequestProtocols.swift */,
+				C5A3FA5C595300C41D3EEDDC62BA5346 /* Row.swift */,
+				4B77732AA78CA38A0C1EC8D1A176FCBE /* RowAdapter.swift */,
+				49238935787F5A0C0780105255AA5637 /* RowDecodingError.swift */,
+				AEFB924B80ED9963C2A00B865EE1249A /* SchedulingWatchdog.swift */,
+				7AFCC7DE19B2DA4639A6D5980190B9A0 /* SerializedDatabase.swift */,
+				358B50F923218FF1CB58C56AA9DD9E56 /* SharedValueObservation.swift */,
+				C785F2E2179D264D1754A1AEE21BE366 /* SQL.swift */,
+				341385603D73B1B7DA041D9BD27A02F9 /* SQLAssociation.swift */,
+				CDFE38DD8FF74C10450141EC3949480E /* SQLCollection.swift */,
+				7803A260FE252DB3F37A9C607716212D /* SQLExpression.swift */,
+				66371364E47C7229CEEA0BB90772A1EB /* SQLForeignKeyRequest.swift */,
+				8E8B9E9991146409E601727E3E3C4B44 /* SQLFunctions.swift */,
+				14602DAA864467C21F4EE63808BFFB08 /* SQLGenerationContext.swift */,
+				5D05748C7443696D5EC420F9F02289BC /* SQLInterpolation.swift */,
+				04E090445BFCBE7D3B7FFA1621782CDF /* SQLInterpolation+QueryInterface.swift */,
+				2C1970BFA207DF56323DC9CC6AE5444C /* SQLiteDateParser.swift */,
+				853C931EECB3E3A201218F5B62795665 /* SQLOperators.swift */,
+				B2899E5FF305A757DC68ED7D9D5B9E00 /* SQLOrdering.swift */,
+				30E431A74C3FEC150EF43FBFC33F296B /* SQLQueryGenerator.swift */,
+				46D8F48D64B85741C56896640759F531 /* SQLRelation.swift */,
+				C04E1B6DD11F636D98B3D8E3ECE0572F /* SQLRequest.swift */,
+				EC404119D8F44BFB4885E45AF0FCBD3A /* SQLSelection.swift */,
+				DC68F9210841881E134B02FE01D6C427 /* SQLSubquery.swift */,
+				7EF3D929D618B54762CA7A17599E437F /* StandardLibrary.swift */,
+				D45A784599A4ACFC9424DCF6EE1D8526 /* Statement.swift */,
+				202B73780B12D492D23D84459D68E942 /* StatementAuthorizer.swift */,
+				D5565006903EE1A388E9CA8232009F70 /* StatementColumnConvertible.swift */,
+				E1DCD50BA0F7B47706C3FE9A70E38D2D /* Table.swift */,
+				BEAEE237D4A8992EB5FEC196BB348F35 /* TableDefinition.swift */,
+				FB52DD151C276F690ACDDA6EC67837E9 /* TableRecord.swift */,
+				5DEA04D5B7CB9AEAB0FEB0101F5A02DF /* TableRecord+Association.swift */,
+				0E97D0023A0AF5BB7AE934B8A7C9CB6E /* TableRecord+QueryInterfaceRequest.swift */,
+				43F75E0586820CAE7D24E5A4913CC116 /* Trace.swift */,
+				053F9FF86E30B72C1C4843856A9530BE /* TransactionClock.swift */,
+				E66AC32D35BF8255216843B187E4E815 /* TransactionObserver.swift */,
+				DB8174A6A20379BA3A4101BBABE5F867 /* URL.swift */,
+				13976EA540F4A59508E3AF0D1D233743 /* Utils.swift */,
+				9A005719C69C17F5B7AFACEA98776201 /* UUID.swift */,
+				3B72F6A53D0C1E7A3C38CC94AB496C6F /* ValueConcurrentObserver.swift */,
+				65A477B024C7860344D36CF967950ED8 /* ValueObservation.swift */,
+				B23B32E71C4FD6709B76D5D81806FCDC /* ValueObservationScheduler.swift */,
+				4AE1BF7BE9B42AE5DE67F967306F5202 /* ValueReducer.swift */,
+				113BD6D01FDC273C8F51326B7110D31A /* ValueWriteOnlyObserver.swift */,
+				6D16873CE8C84AD6E7C6818BE8ED6BF9 /* VirtualTableModule.swift */,
+				15397386FCBCDBD0697E6B3E50249078 /* WALSnapshot.swift */,
+				5FC082F4379DCF902B4A2DD186B84921 /* WALSnapshotTransaction.swift */,
+			);
+			name = standard;
+			sourceTree = "<group>";
+		};
+		0E4AD456F40410179F00AB0A339DA1A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3FA27737C7923959442793BCEED134E /* MySQL.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A4989F33642C3702E6D8F3378A2F709 /* GRDB.swift */ = {
+			isa = PBXGroup;
+			children = (
+				0B8994020D6D5A27FA46B38776952A8A /* standard */,
+				9BF1EB28FBCCF73824727C63BAE93216 /* Support Files */,
+			);
+			path = GRDB.swift;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5AC8A04C88F15C465DD677359F9B0E10 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E22CDF2096B6F220F6403BC03B3A8B2B /* OHMySQL.modulemap */,
+				140FF461170E3E511C87A789EDC3CED9 /* OHMySQL-dummy.m */,
+				440181DC7C85701AEDA7BB32158F7FA8 /* OHMySQL-Info.plist */,
+				BF95AF4106482EF7C5E47C53711533E1 /* OHMySQL-prefix.pch */,
+				2D086984F75AC3E3E5D6DC40B44070EB /* OHMySQL-umbrella.h */,
+				AEE1592AFD5562E9526E259BCFD09049 /* OHMySQL-xcframeworks.sh */,
+				5D3F363937D3AD14FF93CF48AD895C10 /* OHMySQL.debug.xcconfig */,
+				F1799409723FBC9F7EB087AD75DECFDD /* OHMySQL.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OHMySQL";
+			sourceTree = "<group>";
+		};
+		6A0795F3120B4668AE2A28369B7FC203 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE8664D43D4A6D929586A83690E0718C /* ButtonOnKeyboard */,
+				1A4989F33642C3702E6D8F3378A2F709 /* GRDB.swift */,
+				9218A467511E6FA1166A741C7E37B367 /* GrowingTextView */,
+				83DEFD0AD0C53EAD8FA99E2C4B36D4C6 /* OHMySQL */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		83DEFD0AD0C53EAD8FA99E2C4B36D4C6 /* OHMySQL */ = {
+			isa = PBXGroup;
+			children = (
+				D1C13898C1FD5D6590EBD6EB5F5802BC /* CharsetEncoding.h */,
+				32860FDE89C41BB52ED4C76F11BD0B93 /* CharsetEncoding.m */,
+				9A6406A2CE8E1643FF0F77F059FD3E52 /* NSData+OHSerialization.h */,
+				9B6B4C98E57FB66A454D9AE74EC17A3C /* NSData+OHSerialization.m */,
+				A7E60EAAB59D076E5F6AC5CDAADFFF8F /* NSNumber+OHSerialization.h */,
+				FA478A9483AB9C432BA7377B8C602431 /* NSNumber+OHSerialization.m */,
+				5C0695E9D88ACC6E3998D09FC30F3AB9 /* NSObject+Mapping.h */,
+				E838B9F6F8E23C4A25667E612AF1C4B8 /* NSObject+Mapping.m */,
+				1490681601F7163E3BD7B6338C2EF2C3 /* NSString+Escaping.h */,
+				F03A71A5FF385A15D11E456313632CE4 /* NSString+Escaping.m */,
+				1014FEAC18DC03AB87FB32F312E70277 /* NSString+OHSerialization.h */,
+				37A0F4A992C897241766CA15DE70036F /* NSString+OHSerialization.m */,
+				E7F0E4C89B442E567C80CB9086AB6D6B /* NSString+Utility.h */,
+				1D9A8ABF37A568E7B8D94893F693FA44 /* NSString+Utility.m */,
+				4B428E0D2E4DC5564032E72E98841A67 /* OHConstants.h */,
+				B4978C67A0A717CF8EA08FBD75BEEB35 /* OHJoinConstants.h */,
+				3990F8FE166AEE51FDCD134A09A264DE /* OHJoinConstants.m */,
+				2DBA7AF1ECB8B1086F5190BE121BBD55 /* OHLogging.h */,
+				4AA264E7858422961609629395BE8487 /* OHMySQL.h */,
+				AEC887AC65B139FC3D3E3E2456C14B1E /* OHMySQLConfiguration.h */,
+				6FC31A6723E625A116B88C92F5C968E4 /* OHMySQLConfiguration.m */,
+				8FB6685774EFABBFEC55AEC3FBBC4E06 /* OHMySQLContainer.h */,
+				CBFD5966EE5F10BC425D3C1D117125F7 /* OHMySQLContainer.m */,
+				764C1A826800FB51133ADCBFEFAD3351 /* OHMySQLMappingProtocol.h */,
+				8890AD98A3D589BE21E66856FAD678B4 /* OHMySQLQueryContext.h */,
+				82AFC359C039D8D4E7BC931408A09610 /* OHMySQLQueryContext.m */,
+				781A8032C30E2270E51C9F2897975585 /* OHMySQLQueryRequest.h */,
+				FA07E8B94D300CA223B26BF1819400C6 /* OHMySQLQueryRequest.m */,
+				AB711D7D317040382C96506A7B4202E3 /* OHMySQLQueryRequestFactory.h */,
+				AEB359910ECEB1FD75C6CAE9CFF626E0 /* OHMySQLQueryRequestFactory.m */,
+				6B74B62718B07B415438F3EF14158704 /* OHMySQLQueryTimeline.h */,
+				35B0D5206D8D23676922A875FAEA1FB0 /* OHMySQLQueryTimeline.m */,
+				8D2E84EBD718886922E61B4808451229 /* OHMySQLSerialization.h */,
+				A7E828796B39368E031180E15B6CBD02 /* OHMySQLSerialization.m */,
+				8B60632EC4EA80BB03455B0BC040DAB9 /* OHMySQLStore.h */,
+				EC5BE2FF832ACFB36D5BD8D6E3573A89 /* OHMySQLStore.m */,
+				6C06441E869CA5DA136F2F7D50ED9267 /* OHMySQLStoreCoordinator.h */,
+				DD742E2B7FDA447F4E5376AEF91E4113 /* OHMySQLStoreCoordinator.m */,
+				AB5A1E7C6599E8D289F4FD60A3DE495F /* OHProtocolType.h */,
+				3009DF9184FBF36C24D81F396BB13148 /* OHRefreshOption.h */,
+				225E5B0E5BA52A60F98F366363E9D639 /* OHResultErrorType.h */,
+				937C0CB6642A38B055C49F62A19C85C9 /* OHResultErrorType.m */,
+				2166CFA8CB92C107D32E2BE116556A1A /* OHSerializationProtocol.h */,
+				358C4D04CB1FB9AD8BDE847B2435DEA2 /* OHSSLConfig.h */,
+				740253AD022F2267E80F68400DA8F583 /* OHSSLConfig.m */,
+				0E4AD456F40410179F00AB0A339DA1A1 /* Frameworks */,
+				5AC8A04C88F15C465DD677359F9B0E10 /* Support Files */,
+			);
+			path = OHMySQL;
+			sourceTree = "<group>";
+		};
+		9218A467511E6FA1166A741C7E37B367 /* GrowingTextView */ = {
+			isa = PBXGroup;
+			children = (
+				FF353604013A0851FF2BC3164510691E /* GrowingTextView.swift */,
+				B3C5B390F0684CC86F8751D8D10B76BC /* Support Files */,
+			);
+			path = GrowingTextView;
+			sourceTree = "<group>";
+		};
+		9BF1EB28FBCCF73824727C63BAE93216 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA0819C757DB47AE0C9E9B05AF394510 /* GRDB.swift.modulemap */,
+				E2D2961998AA8AED92B4AD9B88B7B87C /* GRDB.swift-dummy.m */,
+				05CE4E1C0902E50C902A8732F0F7A4EB /* GRDB.swift-Info.plist */,
+				016E1C582BD3D234711E4B17FA4FAA0A /* GRDB.swift-prefix.pch */,
+				26F15DAD48883FE51E241BC5B2FE3796 /* GRDB.swift-umbrella.h */,
+				17EE1DD53A7DA75CEDA46874F4B35F70 /* GRDB.swift.debug.xcconfig */,
+				31E964D335C3ED18F175596EA798E06C /* GRDB.swift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GRDB.swift";
+			sourceTree = "<group>";
+		};
+		B3C5B390F0684CC86F8751D8D10B76BC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BDD3BE4255C8201BF9929E2721E13F4 /* GrowingTextView.modulemap */,
+				8BD8F5CF39C9609AB9E0FBCFD7481C3D /* GrowingTextView-dummy.m */,
+				27E092BA71579CD892C9BECB47EF6C19 /* GrowingTextView-Info.plist */,
+				0142D8F0E2B55397F2C0F97729F8B422 /* GrowingTextView-prefix.pch */,
+				0BFA9E638FEB40FEA1640805B9AE63F4 /* GrowingTextView-umbrella.h */,
+				B4C61787034108B49D0C45A1DED8EAD3 /* GrowingTextView.debug.xcconfig */,
+				47081A0CA7904B07ECCA5F3DAB1D0B8B /* GrowingTextView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GrowingTextView";
+			sourceTree = "<group>";
+		};
+		C589A851AAF7489E9EBB9A7D55AFB966 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC200887C4C6D6FC7E7EB0230CB79080 /* Pods-AttendanceReportManagementApplication */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				6A0795F3120B4668AE2A28369B7FC203 /* Pods */,
+				D47F7003505515F4DF9342CDF9F46118 /* Products */,
+				C589A851AAF7489E9EBB9A7D55AFB966 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D47F7003505515F4DF9342CDF9F46118 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D997389A50A02458619CBEC67757D1AF /* ButtonOnKeyboard */,
+				17ABD68E920293F080122810A8881638 /* GRDB.swift */,
+				EE6DD8FC166ED967B4261137B1A50A96 /* GrowingTextView.framework */,
+				6DFAC0AC09F4F682430C400379B7E587 /* OHMySQL */,
+				8C53B88D9F761353EAFE11FC3BDECFC3 /* Pods-AttendanceReportManagementApplication */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC200887C4C6D6FC7E7EB0230CB79080 /* Pods-AttendanceReportManagementApplication */ = {
+			isa = PBXGroup;
+			children = (
+				96F1FF187ACC090811AFF7FDC5277529 /* Pods-AttendanceReportManagementApplication.modulemap */,
+				06C66E4402FADF5084BD12362093143F /* Pods-AttendanceReportManagementApplication-acknowledgements.markdown */,
+				196BB412712A66BDEC6ABFAC4BC95E1A /* Pods-AttendanceReportManagementApplication-acknowledgements.plist */,
+				49974F7468CF20FB214AE038D8DBD7DE /* Pods-AttendanceReportManagementApplication-dummy.m */,
+				11E3AF6019B6DBF819144A96C35EC6EA /* Pods-AttendanceReportManagementApplication-frameworks.sh */,
+				691DD54D311816849AB30DAB2A30AAEB /* Pods-AttendanceReportManagementApplication-Info.plist */,
+				705AAA61330411627D58328CFCFC7205 /* Pods-AttendanceReportManagementApplication-umbrella.h */,
+				28CC118CFFE52C528536125CE2C7F2D9 /* Pods-AttendanceReportManagementApplication.debug.xcconfig */,
+				01E2CE63C90987897D4B5674F48D8298 /* Pods-AttendanceReportManagementApplication.release.xcconfig */,
+			);
+			name = "Pods-AttendanceReportManagementApplication";
+			path = "Target Support Files/Pods-AttendanceReportManagementApplication";
+			sourceTree = "<group>";
+		};
+		EB989255FB16D2C00C5B9478FAB7690E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				34DCDEB51EBC83A689FCE6013719582F /* ButtonOnKeyboard.modulemap */,
+				7283CCDAB5F3B65788B7188F808B2CF9 /* ButtonOnKeyboard-dummy.m */,
+				912DA62286327FFEC0AFBF5ED28B6D9C /* ButtonOnKeyboard-Info.plist */,
+				E18D26D89FDAD2B99D7DCE8E329CCD39 /* ButtonOnKeyboard-prefix.pch */,
+				3AFD3BA2709860B474581068DD6871EA /* ButtonOnKeyboard-umbrella.h */,
+				B70A4D96EA764A27C7D62D0CB3AC14B3 /* ButtonOnKeyboard.debug.xcconfig */,
+				8DA36B7CB3AB5FC19607F11572219C87 /* ButtonOnKeyboard.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ButtonOnKeyboard";
+			sourceTree = "<group>";
+		};
+		EE8664D43D4A6D929586A83690E0718C /* ButtonOnKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F1FF94D3B745FF9946F6A8FB9A06EF19 /* ButtonOnKeyboard.swift */,
+				EB989255FB16D2C00C5B9478FAB7690E /* Support Files */,
+			);
+			path = ButtonOnKeyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		381DD32856F2C3684474C71BF357E669 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFAC380A25C873B355B6520A5E7695E4 /* Pods-AttendanceReportManagementApplication-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AFFF98B3BBCD14702B6ABAD8A65F992 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA38CECC36C1FE07F33BA576630AD4A1 /* ButtonOnKeyboard-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5432B5E07F511D3FBA496E96935A7C3F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88C70BD1FD192F9B83F2586163C6121B /* GrowingTextView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		923A292109643AE2BB718255A850B91A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B5D05E840BE80491AC9CE7CBCAEB42 /* CharsetEncoding.h in Headers */,
+				14D993E24729A1C7D7C93F508896293C /* NSData+OHSerialization.h in Headers */,
+				B04CDAFF45B40CEA4BBD5D37AB82248D /* NSNumber+OHSerialization.h in Headers */,
+				7D2045A54A3C6672A92B782F2D6EDEB9 /* NSObject+Mapping.h in Headers */,
+				52BE888C4BBF27054E15A6B41A48523C /* NSString+Escaping.h in Headers */,
+				38197AB61D34B4B3A4176F03AF6FD3AD /* NSString+OHSerialization.h in Headers */,
+				AAC11D83C17060FA291FB5FF2019043B /* NSString+Utility.h in Headers */,
+				8A2ED390D4CA126BB504D4F603B6E16A /* OHConstants.h in Headers */,
+				990DF13448B97E48DF6472A8F6729F13 /* OHJoinConstants.h in Headers */,
+				1CA63067E7EBFCFAA9157BA444E9E4F5 /* OHLogging.h in Headers */,
+				2F7CED7BC32AA42161B7C7E0AA72FA14 /* OHMySQL.h in Headers */,
+				DAC9CC39CC906D8937E05EFC1379EE0D /* OHMySQL-umbrella.h in Headers */,
+				FFA8593AB25E5F27DFC903E4C6BD6BD6 /* OHMySQLConfiguration.h in Headers */,
+				512981BAF54B5B4BBECB2EB6B18859F7 /* OHMySQLContainer.h in Headers */,
+				190AADCA5D1A37EAEEA605AF89EAF19D /* OHMySQLMappingProtocol.h in Headers */,
+				5C036EC0B43D51B525705C92A6186524 /* OHMySQLQueryContext.h in Headers */,
+				38709E0D42542089514E0269E94162A0 /* OHMySQLQueryRequest.h in Headers */,
+				62FA6AE12FE4E1C322181F36A27FF401 /* OHMySQLQueryRequestFactory.h in Headers */,
+				376E84C8D9C1F2DCE228BE00DD34771A /* OHMySQLQueryTimeline.h in Headers */,
+				0ED9DAB56451281A7665A26859EA1F4C /* OHMySQLSerialization.h in Headers */,
+				3E1B65F3939888A4E1793FD80D50642D /* OHMySQLStore.h in Headers */,
+				33521670341ECBA2ECE35D5B6585DA97 /* OHMySQLStoreCoordinator.h in Headers */,
+				45619714C09B5147F4E828EEF7A56380 /* OHProtocolType.h in Headers */,
+				C24D3ED6A3FD148DB5D3D1BEBF966EFF /* OHRefreshOption.h in Headers */,
+				76FB7B6F3B27F442AB13DDC3535DC7FE /* OHResultErrorType.h in Headers */,
+				9A66AC1B8B789DC26EDE63C5BEC700D7 /* OHSerializationProtocol.h in Headers */,
+				1E7B672A807F4BE9FE17C25693357561 /* OHSSLConfig.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F116EE03F189FEAE6CE31969B92BC96A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53DAD42C31A8D52673B70603394DB980 /* GRDB.swift-umbrella.h in Headers */,
+				11E3EBBAE53377CD040784B5CFA98F9E /* grdb_config.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0A86C228CFCBC35A1FD284274ED0930F /* GRDB.swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 741E77F2CA938A475D70720F77CD5A2E /* Build configuration list for PBXNativeTarget "GRDB.swift" */;
+			buildPhases = (
+				F116EE03F189FEAE6CE31969B92BC96A /* Headers */,
+				13B5861E4FCE9BC26FFD27E68C2F2842 /* Sources */,
+				94934049D9EED973CEE5DF0DED27A9A0 /* Frameworks */,
+				E9F0ADE926B9169281EFA931975EB301 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GRDB.swift;
+			productName = GRDB;
+			productReference = 17ABD68E920293F080122810A8881638 /* GRDB.swift */;
+			productType = "com.apple.product-type.framework";
+		};
+		1696A504A8F8B95B82B2382D0A461BF4 /* GrowingTextView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 470CBA1CB671477F088270E2D0E112BD /* Build configuration list for PBXNativeTarget "GrowingTextView" */;
+			buildPhases = (
+				5432B5E07F511D3FBA496E96935A7C3F /* Headers */,
+				816A0230FD2A2482BF910C2E1207E7D9 /* Sources */,
+				ED99F065281192790331C0534DB74814 /* Frameworks */,
+				4F9C375727D5047EDC1FE032CCAFAAE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrowingTextView;
+			productName = GrowingTextView;
+			productReference = EE6DD8FC166ED967B4261137B1A50A96 /* GrowingTextView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		46A930DCB8911656E995579CD67785EF /* ButtonOnKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 237C6E5B9778F0148E4BF3607FBF2C80 /* Build configuration list for PBXNativeTarget "ButtonOnKeyboard" */;
+			buildPhases = (
+				4AFFF98B3BBCD14702B6ABAD8A65F992 /* Headers */,
+				B19B20F0248CC29B41EDFD03604E4921 /* Sources */,
+				F3421E458C1EBF33147CB85E683133F6 /* Frameworks */,
+				19A5D07008C32512D85A5F72185FD802 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ButtonOnKeyboard;
+			productName = ButtonOnKeyboard;
+			productReference = D997389A50A02458619CBEC67757D1AF /* ButtonOnKeyboard */;
+			productType = "com.apple.product-type.framework";
+		};
+		523C0639A1C4C93383B4DF83058D0094 /* OHMySQL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2546121DF7EF2250ADDB465A1F206E83 /* Build configuration list for PBXNativeTarget "OHMySQL" */;
+			buildPhases = (
+				923A292109643AE2BB718255A850B91A /* Headers */,
+				FB058C9CCB9A67122298AC9C52C59633 /* [CP] Copy XCFrameworks */,
+				6D0ED64A7669605166C3F8D2670FF291 /* Sources */,
+				E506ABA92A75FD48FFAF976505683414 /* Frameworks */,
+				54D770EB2C078C33E619C81155587CC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OHMySQL;
+			productName = OHMySQL;
+			productReference = 6DFAC0AC09F4F682430C400379B7E587 /* OHMySQL */;
+			productType = "com.apple.product-type.framework";
+		};
+		69537CE2D228557E545B1A91157C2A57 /* Pods-AttendanceReportManagementApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D4B0CD1388CE4CEE32945364FA7C92A /* Build configuration list for PBXNativeTarget "Pods-AttendanceReportManagementApplication" */;
+			buildPhases = (
+				381DD32856F2C3684474C71BF357E669 /* Headers */,
+				8686566A0689F6301F19959B0BEDC166 /* Sources */,
+				7DD2ECED4023FF863E3E6BCCDE83EDE7 /* Frameworks */,
+				7DAE7601C80FD11A4051F23B450110EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBDCED7EF8B99649676548782D6C239B /* PBXTargetDependency */,
+				C5A4305A58A487CF60662C9D072BE4A1 /* PBXTargetDependency */,
+				B9CF1EE825E25C8B0F93E68241B8AAC3 /* PBXTargetDependency */,
+				16B7ABACDAE739940A364041FBC76EE9 /* PBXTargetDependency */,
+			);
+			name = "Pods-AttendanceReportManagementApplication";
+			productName = Pods_AttendanceReportManagementApplication;
+			productReference = 8C53B88D9F761353EAFE11FC3BDECFC3 /* Pods-AttendanceReportManagementApplication */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = D47F7003505515F4DF9342CDF9F46118 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46A930DCB8911656E995579CD67785EF /* ButtonOnKeyboard */,
+				0A86C228CFCBC35A1FD284274ED0930F /* GRDB.swift */,
+				1696A504A8F8B95B82B2382D0A461BF4 /* GrowingTextView */,
+				523C0639A1C4C93383B4DF83058D0094 /* OHMySQL */,
+				69537CE2D228557E545B1A91157C2A57 /* Pods-AttendanceReportManagementApplication */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19A5D07008C32512D85A5F72185FD802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F9C375727D5047EDC1FE032CCAFAAE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54D770EB2C078C33E619C81155587CC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DAE7601C80FD11A4051F23B450110EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9F0ADE926B9169281EFA931975EB301 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FB058C9CCB9A67122298AC9C52C59633 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/OHMySQL/OHMySQL-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/OHMySQL/OHMySQL-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/OHMySQL/OHMySQL-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13B5861E4FCE9BC26FFD27E68C2F2842 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B662D92C3FF53F007D50609812400EB5 /* Association.swift in Sources */,
+				1AE8186CBFA415DDDE753DE4C1D4276B /* AssociationAggregate.swift in Sources */,
+				9E5EBF122127C0D9955C8D3225144C51 /* BelongsToAssociation.swift in Sources */,
+				2822D61CA3D623D7CE4DD5EC15CD7450 /* CaseInsensitiveIdentifier.swift in Sources */,
+				361E3BE64A5E3DD05B3E7FB545AF2C3A /* CGFloat.swift in Sources */,
+				B00984B12D82F089A1FB3D6734075D9B /* Column.swift in Sources */,
+				C07F7358C719417559E11F03739709F7 /* CommonTableExpression.swift in Sources */,
+				C47A5DB38F197836FB9D35AAE1EC746E /* Configuration.swift in Sources */,
+				8595ED7FEF50C66E33805C7C43883E60 /* Cursor.swift in Sources */,
+				0D1C6B6DB95A642C58B430D59B6AFAAF /* Data.swift in Sources */,
+				5FFFF6D27721B763CD108559E4A6876B /* Database.swift in Sources */,
+				48468A7202B790A2DBBF4127AB30F32F /* Database+Schema.swift in Sources */,
+				F2328F7EF7115EC835354EA71F4BB325 /* Database+Statements.swift in Sources */,
+				105C3B3EE07C0526C87F25726E374047 /* DatabaseBackupProgress.swift in Sources */,
+				631BBA9591896C15C652AD13A7476892 /* DatabaseCancellable.swift in Sources */,
+				C0C9E7993596DDD3BF6344746FDE8F4C /* DatabaseCollation.swift in Sources */,
+				A34FFC75EC3840DA3B9BC661AEFB3BB0 /* DatabaseDateComponents.swift in Sources */,
+				D071E12513014DE15BEB39FD7F0EBC4F /* DatabaseError.swift in Sources */,
+				3FD72EF2072C71C0B83A0A9D8B41C99B /* DatabaseFunction.swift in Sources */,
+				25BE3555DAB6FD00DE90AFF9FE16FDC2 /* DatabaseMigrator.swift in Sources */,
+				CFECBCD23032D49890A898C0D87D5060 /* DatabasePool.swift in Sources */,
+				88BD1C32C5CFB089F3065CF4C8D3481A /* DatabasePromise.swift in Sources */,
+				6380B160E1DB9C223BA0EECB7AF0B5D5 /* DatabasePublishers.swift in Sources */,
+				94208BE491946CAC5AACC324F0EBAEDA /* DatabaseQueue.swift in Sources */,
+				B6685DEAC389959356E2BE8537130FA1 /* DatabaseReader.swift in Sources */,
+				68F70EB6CC92E261F4D5CE1914F51FD1 /* DatabaseRegion.swift in Sources */,
+				9D27FB99A7E5BCA6038CB835C5DC47FF /* DatabaseRegionObservation.swift in Sources */,
+				8EDFB5B45069C22707FA598A2ADDDB39 /* DatabaseSchemaCache.swift in Sources */,
+				12C9388AA343D031607DC62B6C08D4D3 /* DatabaseSnapshot.swift in Sources */,
+				5456E36984841F362070049010530ED2 /* DatabaseSnapshotPool.swift in Sources */,
+				3543CF500D3A639B87F9AD2C46F0088D /* DatabaseValue.swift in Sources */,
+				812A5731E46DBD341897B159703F16F2 /* DatabaseValueConvertible.swift in Sources */,
+				296F63DFF8AD34EDBC6376041D117B3E /* DatabaseValueConvertible+Decodable.swift in Sources */,
+				0CF9149136A37E08EFFB3DA900659BB9 /* DatabaseValueConvertible+Encodable.swift in Sources */,
+				201FECAAF05A7F75ECF82EC1B7D51BF0 /* DatabaseValueConvertible+RawRepresentable.swift in Sources */,
+				516538D5A22C83A17184AEF3C39F37FB /* DatabaseValueConvertible+ReferenceConvertible.swift in Sources */,
+				F44B0ADDFB9D13D3F50699A680EB36EB /* DatabaseWriter.swift in Sources */,
+				AA75A7B8B8D3121799C86463D5751229 /* Date.swift in Sources */,
+				6AC4BEBB792C364765413A9BF1217A69 /* Decimal.swift in Sources */,
+				9307965AA05830C534DB64602838D96D /* EncodableRecord.swift in Sources */,
+				C14CC3D22DEE619B8E1EB54FF8199498 /* EncodableRecord+Encodable.swift in Sources */,
+				2DC9B7431025480FD97BE4892BA947EE /* Export.swift in Sources */,
+				D0672D96A4BF31CF7414FA94217C9362 /* Fetch.swift in Sources */,
+				55832C53C33FDE22D9EED2C322AE8F55 /* FetchableRecord.swift in Sources */,
+				F251D35FBEDC5AD3483828572F8F355D /* FetchableRecord+Decodable.swift in Sources */,
+				9B07ECF94DE28D10249B8B08368440CE /* FetchableRecord+TableRecord.swift in Sources */,
+				19DE24C6574BFDB0B4A2301E2EB76C9B /* FetchRequest.swift in Sources */,
+				9400F91563B4FB15CCF4629E43895BE9 /* Fixits.swift in Sources */,
+				67476DAA27E9DA894C58E3D64B926973 /* ForeignKey.swift in Sources */,
+				65CF21451D7AC1ED9B790276134CA4A3 /* FTS3.swift in Sources */,
+				B84AD7A8805F41EE2100FE0B107AAA0E /* FTS3+QueryInterface.swift in Sources */,
+				3DBBACD7277093C9A8D06A3A75B41362 /* FTS3Pattern.swift in Sources */,
+				5FA3AED4B034E0BF102DC24F5BD92218 /* FTS3TokenizerDescriptor.swift in Sources */,
+				4F3F6E84B82EF3CA867756774258771C /* FTS4.swift in Sources */,
+				0F33832C7C18C2C040D28CE13214CA86 /* FTS5.swift in Sources */,
+				60CE64D95DFF4AAAD8B9E01DC7852B32 /* FTS5+QueryInterface.swift in Sources */,
+				3293BE6B889780B3A5D5F988852772B0 /* FTS5CustomTokenizer.swift in Sources */,
+				9A4AB19A7DAFEBE330CE6A239AFCDF1A /* FTS5Pattern.swift in Sources */,
+				7F9905F3B5C852B4232B2CEEA9F68817 /* FTS5Tokenizer.swift in Sources */,
+				4106B70408B2CE60291546EFD03ECED1 /* FTS5TokenizerDescriptor.swift in Sources */,
+				FEF59FC6D176CF41A89132B43E00EA20 /* FTS5WrapperTokenizer.swift in Sources */,
+				988E2E4756AFE3D56598CCA9E0F2616F /* GRDB.swift-dummy.m in Sources */,
+				F42AF4D609F5496DE3C5B7306DB9040A /* HasManyAssociation.swift in Sources */,
+				26323FFB4BBF6C227DD581169B21E445 /* HasManyThroughAssociation.swift in Sources */,
+				C6C2F8BC95B08B457AA505420DCC3E69 /* HasOneAssociation.swift in Sources */,
+				3CE7976718A39A7AFAFF3A102AB3A306 /* HasOneThroughAssociation.swift in Sources */,
+				7A64A63639B79F0B38A51E960FFFFACE /* Inflections.swift in Sources */,
+				FBC00527D206155B0D31F79902F3733C /* Inflections+English.swift in Sources */,
+				0AA48751D0C51ABEBAC1154CFD2BA3E7 /* JoinAssociation.swift in Sources */,
+				9FFD0DAD6370A7C7941C9B35D981702C /* JSONRequiredEncoder.swift in Sources */,
+				EBD3171028608C12B4D63B0951D785DB /* LockedBox.swift in Sources */,
+				6E58324F699B2A1FDA728E9ADE7B901C /* Map.swift in Sources */,
+				027D420EB173791EBC45D3BA27B5357A /* Migration.swift in Sources */,
+				EE23C890401DF845AEDF590EE07D1E05 /* MutablePersistableRecord.swift in Sources */,
+				CB1DE556214E32A9D25474ADC00DFD9F /* MutablePersistableRecord+DAO.swift in Sources */,
+				51AC97EEA6214E0C5600A66049D695DD /* MutablePersistableRecord+Delete.swift in Sources */,
+				1D8850C41E64211038C8076B1862BFBC /* MutablePersistableRecord+Insert.swift in Sources */,
+				76528ECBDBEF763B62501B53CF313BAB /* MutablePersistableRecord+Save.swift in Sources */,
+				7DC95A507D0B12A0AF295C86D2EBAC73 /* MutablePersistableRecord+Update.swift in Sources */,
+				F550BCDA6898D86E56C7F1CD7B719B6C /* MutablePersistableRecord+Upsert.swift in Sources */,
+				9F9080C887675C6B6DBC9438D88E1829 /* NSData.swift in Sources */,
+				BB106AD74E6338B532096BDECBCF651D /* NSNull.swift in Sources */,
+				C9C8F4FB210CF09B9F80F4C21E12EB76 /* NSNumber.swift in Sources */,
+				BCEDCA19FE327AC2BBDCE624B1CEAC49 /* NSString.swift in Sources */,
+				1BF14606E5D3E93B10DF8ADEC06E5C19 /* OnDemandFuture.swift in Sources */,
+				4DAA3AE367327CFA7B4C1B4C414E762E /* Optional.swift in Sources */,
+				3F37D286FED652AF8A0547D4417E373D /* OrderedDictionary.swift in Sources */,
+				02C9A7E7DE09CCFDEDF8DCA8FD08F7E7 /* PersistableRecord.swift in Sources */,
+				88DCE9B88649B6E53F18523601949A84 /* PersistableRecord+Insert.swift in Sources */,
+				51263DA4B65520A97D8BE3396E8FDC6A /* PersistableRecord+Save.swift in Sources */,
+				EF94E548FCF79C53B596A1104D435A72 /* PersistableRecord+Upsert.swift in Sources */,
+				EE344F18EE3FF3DAED6FBFDFD15B0127 /* Pool.swift in Sources */,
+				7BE7CD18C758BD5E9D0E15969350FDCF /* QueryInterfaceRequest.swift in Sources */,
+				C28347F71CBF37B04F7B02022BD28592 /* ReadWriteBox.swift in Sources */,
+				DFB82C94F985BFBD7E2445648582D36E /* ReceiveValuesOn.swift in Sources */,
+				45EE8B48FA3CF0E7A65323D569586E88 /* Record.swift in Sources */,
+				FDC6C1DCB0976A1549C190FA07AB80BE /* Refinable.swift in Sources */,
+				E060CA7906ACEFE27705881A25B80431 /* RemoveDuplicates.swift in Sources */,
+				1CFF619A40B2ECB58172D91A52A79294 /* RequestProtocols.swift in Sources */,
+				08502D330FBD2EFC5A377D8375450FF2 /* Row.swift in Sources */,
+				3384755A2D94EFD7E75943A4EF48CEED /* RowAdapter.swift in Sources */,
+				0EBE1D0A31E3042E959F0A89AF24E3E8 /* RowDecodingError.swift in Sources */,
+				333B62E172795AA76B6392B5B7A595B8 /* SchedulingWatchdog.swift in Sources */,
+				69C62F5BC5276E465D889E9C555B538E /* SerializedDatabase.swift in Sources */,
+				1153CE21C51A71DD16673034ED6EB49F /* SharedValueObservation.swift in Sources */,
+				6F1506FBD94EC36246E362FEE9C04F12 /* SQL.swift in Sources */,
+				D96FD8256EBF39C14CECE1D223FCE277 /* SQLAssociation.swift in Sources */,
+				37FB3D19D7D197F9C855A07DE8A8BB0F /* SQLCollection.swift in Sources */,
+				0FCBF2C199FE912C6CE0DC22EEA00C4F /* SQLExpression.swift in Sources */,
+				DDD3C75DF37F8BF4D48218B4F2849F55 /* SQLForeignKeyRequest.swift in Sources */,
+				AC9607CB4761F349E71CF80CF8BCAF07 /* SQLFunctions.swift in Sources */,
+				8B8CAB89DE15088220B0CC68875657E3 /* SQLGenerationContext.swift in Sources */,
+				4E7541DEC16634508FDEF91E4191F3D4 /* SQLInterpolation.swift in Sources */,
+				C417A36D849AF546A7C3B6E2732A525B /* SQLInterpolation+QueryInterface.swift in Sources */,
+				7BC05969C0FAEDDD69F39437F961B131 /* SQLiteDateParser.swift in Sources */,
+				02386002989C88066C01CF0BD813EB8D /* SQLOperators.swift in Sources */,
+				9B5D13890B462678154555216E9FB4FC /* SQLOrdering.swift in Sources */,
+				AF88FEEBC14DB41E8727FB7EC33C7320 /* SQLQueryGenerator.swift in Sources */,
+				F205C2A99B499AFE0B556F7BE76674F4 /* SQLRelation.swift in Sources */,
+				8C6C1AF9A775BC2EFC579815F71CFFBC /* SQLRequest.swift in Sources */,
+				53B15758DA739D6A45221EBB0CAA858D /* SQLSelection.swift in Sources */,
+				3DB06E525F55BD72BA9634D219A652C2 /* SQLSubquery.swift in Sources */,
+				61B7F96C746A00E776AB314B5A66DDD8 /* StandardLibrary.swift in Sources */,
+				D91458FE2F4C13058F88E64AB43DDE14 /* Statement.swift in Sources */,
+				28E4FAAE5E5F4D3E906F9A25A4F7374E /* StatementAuthorizer.swift in Sources */,
+				91ECA5C71900C87DD05D3843FD218F05 /* StatementColumnConvertible.swift in Sources */,
+				53F10BCF82E5C13C8ECC59A5BEA44838 /* Table.swift in Sources */,
+				B000CCF393349F10DB3D44101375CE11 /* TableDefinition.swift in Sources */,
+				2D0F8E1259F8FFBF0AB2CAC8049CE438 /* TableRecord.swift in Sources */,
+				3BF07D4F90AC5F3A5A7785CFEB1387C6 /* TableRecord+Association.swift in Sources */,
+				2196D4E584E4A40AD8928980C4DBDDB5 /* TableRecord+QueryInterfaceRequest.swift in Sources */,
+				8166EB0F728954C184CCD8EBFACB585E /* Trace.swift in Sources */,
+				8E4D87D5D4C1EAB154DABE2AB2F20598 /* TransactionClock.swift in Sources */,
+				AF23F9EB803296D23BD3DEB2C292E4D4 /* TransactionObserver.swift in Sources */,
+				58722B18DC3F8528E01A53B32950DED3 /* URL.swift in Sources */,
+				9509FE0F8B08C4B61D1D8915B6297AF3 /* Utils.swift in Sources */,
+				1311BC9398DB98D932A65F1F7D63FA23 /* UUID.swift in Sources */,
+				D0BA729FF7DE3C360D9EF6DDFB5C923C /* ValueConcurrentObserver.swift in Sources */,
+				C1D15272EC35A7BFE9862616F6F54ED0 /* ValueObservation.swift in Sources */,
+				2553C238C543B96FD2BAEE160CDE36FF /* ValueObservationScheduler.swift in Sources */,
+				D9D4C703A2D219C170A0CDEC16FC9675 /* ValueReducer.swift in Sources */,
+				7A2A76E5DCF8E6ADA8F9C4C0EBC60861 /* ValueWriteOnlyObserver.swift in Sources */,
+				D042A3D1E7E95D54D7DB0E558BBCF9AF /* VirtualTableModule.swift in Sources */,
+				D2EE9DCE29A2A9254EEFA833552DD70E /* WALSnapshot.swift in Sources */,
+				CF0C01E9DAD2B172677B4622C8DBD71B /* WALSnapshotTransaction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D0ED64A7669605166C3F8D2670FF291 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AC66B6E3A326F92FAD90A1AED0F626E /* CharsetEncoding.m in Sources */,
+				7CAC33206D276DB9BB1702B625CF38C2 /* NSData+OHSerialization.m in Sources */,
+				75FB5A375B3344CDBBCE9BEE9F8E079E /* NSNumber+OHSerialization.m in Sources */,
+				E20DF912C3729B6578913137EF7174FA /* NSObject+Mapping.m in Sources */,
+				0DB3264782C45CA7A4116AD100828382 /* NSString+Escaping.m in Sources */,
+				E76FC4F2B936ADE2EEAC0C7E28063F7F /* NSString+OHSerialization.m in Sources */,
+				672767DF165644D1C34B5CF6CB505E18 /* NSString+Utility.m in Sources */,
+				278F4D4720A8E96A4CAE3D757D75948D /* OHJoinConstants.m in Sources */,
+				25DE7654F0591CB7D41E890254702EFB /* OHMySQL-dummy.m in Sources */,
+				34E3CE2258CC758A8639E2173B7DED50 /* OHMySQLConfiguration.m in Sources */,
+				3C4404C4101E4F47F063340F1A1B8F69 /* OHMySQLContainer.m in Sources */,
+				2F684CD9D09A5EBF7BB3064EE80A705B /* OHMySQLQueryContext.m in Sources */,
+				6E625F4AEADC1CA5C1C292ACF07ACCA7 /* OHMySQLQueryRequest.m in Sources */,
+				4829733BB308818447B9012371DB093C /* OHMySQLQueryRequestFactory.m in Sources */,
+				5138FA9DF4C1DF05947651A7354C7293 /* OHMySQLQueryTimeline.m in Sources */,
+				E75384E77F45BF39F724220CF9D903BE /* OHMySQLSerialization.m in Sources */,
+				7B42F3549B79318DAA95000FF58C82EA /* OHMySQLStore.m in Sources */,
+				4956FA58CB322CA1A97311293AE017FF /* OHMySQLStoreCoordinator.m in Sources */,
+				E5E0100F378016E9F59D4B26D408CD3C /* OHResultErrorType.m in Sources */,
+				858429680DDFF4F1BCB75E286119468C /* OHSSLConfig.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		816A0230FD2A2482BF910C2E1207E7D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CD248BD987C169EA8BB2E2FFA95C8B5 /* GrowingTextView.swift in Sources */,
+				FCAE9320F2296CF5322687AA68D2E6A3 /* GrowingTextView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8686566A0689F6301F19959B0BEDC166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E9988E741D78EF5B0A0C576CBD27859 /* Pods-AttendanceReportManagementApplication-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B19B20F0248CC29B41EDFD03604E4921 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C45EEB6BECA6BDCD82DFC904121CECC7 /* ButtonOnKeyboard.swift in Sources */,
+				9C4493BDD9A6850AC4EAD710042CA2BC /* ButtonOnKeyboard-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16B7ABACDAE739940A364041FBC76EE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OHMySQL;
+			target = 523C0639A1C4C93383B4DF83058D0094 /* OHMySQL */;
+			targetProxy = 38DE2B90913A3855313CC6ACFD3F26DE /* PBXContainerItemProxy */;
+		};
+		B9CF1EE825E25C8B0F93E68241B8AAC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GrowingTextView;
+			target = 1696A504A8F8B95B82B2382D0A461BF4 /* GrowingTextView */;
+			targetProxy = C7DB09184D7A4C3B69879A7B74771461 /* PBXContainerItemProxy */;
+		};
+		C5A4305A58A487CF60662C9D072BE4A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GRDB.swift;
+			target = 0A86C228CFCBC35A1FD284274ED0930F /* GRDB.swift */;
+			targetProxy = 053CF7CDC775E161A2574435C6322D47 /* PBXContainerItemProxy */;
+		};
+		EBDCED7EF8B99649676548782D6C239B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ButtonOnKeyboard;
+			target = 46A930DCB8911656E995579CD67785EF /* ButtonOnKeyboard */;
+			targetProxy = 690584FE805398EAE364E20A78418A4D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0769B9F477D4ADEB29C060F18E6E9FD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DA36B7CB3AB5FC19607F11572219C87 /* ButtonOnKeyboard.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ButtonOnKeyboard/ButtonOnKeyboard-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ButtonOnKeyboard/ButtonOnKeyboard-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ButtonOnKeyboard/ButtonOnKeyboard.modulemap";
+				PRODUCT_MODULE_NAME = ButtonOnKeyboard;
+				PRODUCT_NAME = ButtonOnKeyboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1AA40CDD76F0B82367BA318036557293 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1799409723FBC9F7EB087AD75DECFDD /* OHMySQL.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OHMySQL/OHMySQL-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OHMySQL/OHMySQL-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/OHMySQL/OHMySQL.modulemap";
+				PRODUCT_MODULE_NAME = OHMySQL;
+				PRODUCT_NAME = OHMySQL;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		25C4E1278A41F2E3A99B9A0671944902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31E964D335C3ED18F175596EA798E06C /* GRDB.swift.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GRDB.swift/GRDB.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GRDB.swift/GRDB.swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GRDB.swift/GRDB.swift.modulemap";
+				PRODUCT_MODULE_NAME = GRDB;
+				PRODUCT_NAME = GRDB;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.7;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2F2BA5FB34226B9B641ACA6379CF7802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B70A4D96EA764A27C7D62D0CB3AC14B3 /* ButtonOnKeyboard.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ButtonOnKeyboard/ButtonOnKeyboard-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ButtonOnKeyboard/ButtonOnKeyboard-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ButtonOnKeyboard/ButtonOnKeyboard.modulemap";
+				PRODUCT_MODULE_NAME = ButtonOnKeyboard;
+				PRODUCT_NAME = ButtonOnKeyboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		37BF66ACA31C7F1F170B834E9C5CAD20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D3F363937D3AD14FF93CF48AD895C10 /* OHMySQL.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OHMySQL/OHMySQL-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OHMySQL/OHMySQL-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/OHMySQL/OHMySQL.modulemap";
+				PRODUCT_MODULE_NAME = OHMySQL;
+				PRODUCT_NAME = OHMySQL;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		44D22488C5B90784C8A1A88D9D0076CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28CC118CFFE52C528536125CE2C7F2D9 /* Pods-AttendanceReportManagementApplication.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AttendanceReportManagementApplication/Pods-AttendanceReportManagementApplication-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AttendanceReportManagementApplication/Pods-AttendanceReportManagementApplication.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		652BCD3312E52EDDFD894D9D5C098F91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01E2CE63C90987897D4B5674F48D8298 /* Pods-AttendanceReportManagementApplication.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AttendanceReportManagementApplication/Pods-AttendanceReportManagementApplication-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AttendanceReportManagementApplication/Pods-AttendanceReportManagementApplication.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7C3FBC45C4966EFE20583918767EFBE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		94E0124FA2D5816994B99352BF9208FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47081A0CA7904B07ECCA5F3DAB1D0B8B /* GrowingTextView.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GrowingTextView/GrowingTextView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GrowingTextView/GrowingTextView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GrowingTextView/GrowingTextView.modulemap";
+				PRODUCT_MODULE_NAME = GrowingTextView;
+				PRODUCT_NAME = GrowingTextView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A7EC8DB82168B2E00479ABA329D298A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4C61787034108B49D0C45A1DED8EAD3 /* GrowingTextView.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GrowingTextView/GrowingTextView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GrowingTextView/GrowingTextView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GrowingTextView/GrowingTextView.modulemap";
+				PRODUCT_MODULE_NAME = GrowingTextView;
+				PRODUCT_NAME = GrowingTextView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C18D0AD0B7EAE66B826C6702B6CBFD92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17EE1DD53A7DA75CEDA46874F4B35F70 /* GRDB.swift.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GRDB.swift/GRDB.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GRDB.swift/GRDB.swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GRDB.swift/GRDB.swift.modulemap";
+				PRODUCT_MODULE_NAME = GRDB;
+				PRODUCT_NAME = GRDB;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.7;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FF0A36149038A192FFD678E1D4A40D3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D4B0CD1388CE4CEE32945364FA7C92A /* Build configuration list for PBXNativeTarget "Pods-AttendanceReportManagementApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44D22488C5B90784C8A1A88D9D0076CF /* Debug */,
+				652BCD3312E52EDDFD894D9D5C098F91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		237C6E5B9778F0148E4BF3607FBF2C80 /* Build configuration list for PBXNativeTarget "ButtonOnKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F2BA5FB34226B9B641ACA6379CF7802 /* Debug */,
+				0769B9F477D4ADEB29C060F18E6E9FD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2546121DF7EF2250ADDB465A1F206E83 /* Build configuration list for PBXNativeTarget "OHMySQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37BF66ACA31C7F1F170B834E9C5CAD20 /* Debug */,
+				1AA40CDD76F0B82367BA318036557293 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		470CBA1CB671477F088270E2D0E112BD /* Build configuration list for PBXNativeTarget "GrowingTextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7EC8DB82168B2E00479ABA329D298A5 /* Debug */,
+				94E0124FA2D5816994B99352BF9208FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C3FBC45C4966EFE20583918767EFBE2 /* Debug */,
+				FF0A36149038A192FFD678E1D4A40D3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		741E77F2CA938A475D70720F77CD5A2E /* Build configuration list for PBXNativeTarget "GRDB.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C18D0AD0B7EAE66B826C6702B6CBFD92 /* Debug */,
+				25C4E1278A41F2E3A99B9A0671944902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

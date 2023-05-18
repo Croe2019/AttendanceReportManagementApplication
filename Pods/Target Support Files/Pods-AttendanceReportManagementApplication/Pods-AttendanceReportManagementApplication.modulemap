@@ -1,0 +1,6 @@
+framework module Pods_AttendanceReportManagementApplication {
+  umbrella header "Pods-AttendanceReportManagementApplication-umbrella.h"
+
+  export *
+  module * { export * }
+}
