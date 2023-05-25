@@ -60,7 +60,6 @@ class DatabaseManager{
        // try! migrator.migrate(queue)
     }
     
-    
     // ユーザー登録処理
     public func userInsert(name: String, email: String, password: String){
         

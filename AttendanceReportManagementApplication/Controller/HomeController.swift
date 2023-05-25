@@ -6,24 +6,21 @@
 //
 
 import UIKit
+import GRDB
 
 class HomeController: UIViewController {
-
+    
+    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    
+    private var userData = GetUserData()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        userData.getUserData(userName: &nameLabel.text!, userEmail: &emailLabel.text!)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

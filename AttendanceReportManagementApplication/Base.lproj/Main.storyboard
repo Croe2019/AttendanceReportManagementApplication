@@ -108,37 +108,82 @@
             </objects>
             <point key="canvasLocation" x="-60.305343511450381" y="724.64788732394368"/>
         </scene>
-        <!--Item 2-->
+        <!--UserList-->
         <scene sceneID="jWK-HC-MKC">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="pu8-c0-wa5" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="pu8-c0-wa5" customClass="UserListController" customModule="AttendanceReportManagementApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ccf-MZ-PnC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="X1Y-U7-Vgg">
+                                <rect key="frame" x="0.0" y="72" width="393" height="677"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="115" id="8zw-Zc-vdW">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="115"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8zw-Zc-vdW" id="Gd5-6t-v8b">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="115"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Ujh-0t-ShJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="zZ2-EV-ZAL"/>
+                    <tabBarItem key="tabBarItem" title="UserList" id="zZ2-EV-ZAL"/>
+                    <connections>
+                        <outlet property="userListTableView" destination="X1Y-U7-Vgg" id="GQR-yZ-POv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IG3-c2-81z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1903" y="725"/>
+            <point key="canvasLocation" x="1901.5267175572519" y="724.64788732394368"/>
         </scene>
-        <!--Item 1-->
+        <!--Home-->
         <scene sceneID="LPQ-15-x4B">
             <objects>
                 <viewController storyboardIdentifier="home" modalPresentationStyle="fullScreen" id="GZ1-y5-DH5" customClass="HomeController" customModule="AttendanceReportManagementApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A9R-FN-nUS">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dcb-Hn-1sE">
+                                <rect key="frame" x="61" y="481" width="270" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIy-Pj-tdN">
+                                <rect key="frame" x="61" y="364" width="270" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kqr-C3-FMs">
+                                <rect key="frame" x="76" y="81" width="240" height="217"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="5qY-aZ-cA7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="aU5-3N-vwJ"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="aU5-3N-vwJ"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="Dcb-Hn-1sE" id="GFA-cd-mqr"/>
+                        <outlet property="nameLabel" destination="DIy-Pj-tdN" id="XBM-af-PoW"/>
+                        <outlet property="profileImage" destination="kqr-C3-FMs" id="Kem-jv-ri6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dGo-iN-KnG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1904" y="13"/>
+            <point key="canvasLocation" x="1903.0534351145038" y="12.67605633802817"/>
         </scene>
         <!--Menu Controller-->
         <scene sceneID="qL7-am-9DT">
