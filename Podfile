@@ -6,9 +6,14 @@ target 'AttendanceReportManagementApplication' do
   use_frameworks!
 
   # Pods for AttendanceReportManagementApplication
- pod 'OHMySQL'
  pod 'GrowingTextView', '0.7.2'
  pod 'ButtonOnKeyboard'
- pod 'GRDB.swift'
+ pod 'SnapKit'
+ pod 'SQLite.swift', '~> 0.14.0'
+ pod 'FirebaseCore'
+ pod 'Firebase/Storage'
+ pod 'Firebase'
+ pod 'Firebase/Firestore'
+
 
 end
