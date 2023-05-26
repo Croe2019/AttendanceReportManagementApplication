@@ -7,15 +7,30 @@
 
 import UIKit
 
-class UserListController: UIViewController {
+class UserListController: UIViewController{
+    
     
     @IBOutlet weak var userListTableView: UITableView!
     
+    var nameArray = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+       
     }
     
 
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//
+//        return nameArray.count
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//
+//        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+//        // セルに表示する値を設定する
+//        cell.textLabel!.text = nameArray[indexPath.row]
+//        return cell
+//    }
 }
